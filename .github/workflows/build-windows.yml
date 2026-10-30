@@ -30,16 +30,31 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           .venv\Scripts\python.exe -m local_epub resources export --dir resources --pack dist\LocalPDFtoEPUB-ocr-resources.zip
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-      - name: Convert real samples with the packaged CLI and system-only PATH
+          $modelHash = (Get-FileHash -Algorithm SHA256 dist/LocalPDFtoEPUB-ocr-resources.zip).Hash.ToLowerInvariant()
+          "$modelHash  LocalPDFtoEPUB-ocr-resources.zip" | Set-Content -Encoding utf8NoBOM dist/LocalPDFtoEPUB-ocr-resources.zip.sha256
+      - name: Prepare public candidate using the installed system runtime
         shell: pwsh
         run: |
-          .venv\Scripts\python.exe scripts\build-smoke.py --resources resources
+          $original = @(Get-ChildItem dist/LocalPDFtoEPUB-*-windows-x64.zip)
+          if ($original.Count -ne 1) { throw 'Expected exactly one app ZIP.' }
+          $public = Join-Path 'dist/public' $original[0].Name
+          .venv\Scripts\python.exe packaging/build_windows_system_runtime.py $original[0].FullName $public
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $hash = (Get-FileHash -Algorithm SHA256 $public).Hash.ToLowerInvariant()
+          "$hash  $($original[0].Name)" | Set-Content -Encoding utf8NoBOM "$public.sha256"
+          Expand-Archive -LiteralPath $public -DestinationPath artifacts/public-app
+          powershell -NoProfile -ExecutionPolicy Bypass -File artifacts/public-app/LocalPDFtoEPUB/Prepare-System-Runtime.ps1 -PrepareOnly
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Convert real samples with the public CLI and system-only PATH
+        shell: pwsh
+        run: |
+          .venv\Scripts\python.exe scripts\build-smoke.py --resources resources --executable artifacts/public-app/LocalPDFtoEPUB/LocalPDFtoEPUB-CLI.exe
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - uses: actions/upload-artifact@v4
         with:
           name: LocalPDFtoEPUB-windows-x64-candidate
           path: |
-            dist/*.zip
-            dist/*.sha256
-            dist/build-info.json
-            artifacts/packaged-smoke/
+            dist/public/*.zip
+            dist/public/*.sha256
+            dist/LocalPDFtoEPUB-ocr-resources.zip
+            dist/LocalPDFtoEPUB-ocr-resources.zip.sha256

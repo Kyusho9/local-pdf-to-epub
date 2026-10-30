@@ -44,7 +44,7 @@ py -3.12 -m venv .venv
 
 - 64 位受支持操作系统：首版候选 Windows 10/11 x64；Mac arm64 最低版本受 Qt / Python / ONNX wheel 共同约束，构建声明为 macOS 14 及以上，低版本未实测。
 - 系统提供基本图形桌面、中文系统字体、文件读写权限。应用不包含也不安装显卡驱动。
-- Python、Qt、PDFium、ONNX Runtime、OpenCV 由应用目录提供。既有Windows包已收集VCRUNTIME140/140_1、MSVCP140/140_1/140_2等运行库；历史实测GUI及OCR worker从包内加载这些DLL，没有加载Anaconda或虚拟环境模块。每个新版包仍须独立核验，不能要求普通用户安装开发环境。
+- Python、Qt、PDFium、ONNX Runtime、OpenCV 由应用目录提供。0.1.6 公开 Windows 包使用系统已安装的 VC++ v14 x64 运行库（14.44.35229 或更新），通过 `Start-LocalPDFtoEPUB.cmd` 启动；可从微软官网下载独立运行库安装器，无需 Visual Studio。此前本地包曾包含这些 DLL，其历史验证不能替代本次公开包验证。
 - EPUBCheck 需要本地 Java 运行时；未随主包准备时，应用自己的结构检查与“EPUBCheck 未执行”必须分开报告。
 - 当前包未使用 Apple Developer ID / Windows 代码签名证书，未进行 Apple 公证。下载后可能出现系统信任提示；不能通过关闭整个系统安全机制解决。
 

@@ -1,5 +1,7 @@
 # Windows DirectML / NVIDIA CUDA 加速
 
+0.1.6 公开 Release 暂不附带包含微软 VC DLL 的两种 GPU 整合 ZIP。以下为现有功能、本地准备方式和实测记录；已准备的匹配资源继续可用。主应用公开包使用已安装的系统 VC++ 运行库，不需要 Visual Studio，详见[使用指南](USAGE.md)。
+
 0.1.5 使用统一 ONNX Runtime 执行接口。Windows 新任务默认尝试 DirectML，CUDA 为 NVIDIA 用户可选后端，也可直接选 CPU；Mac 默认 CPU。旧任务没有记录设备时仍按原 CPU 方式恢复。GPU 不改变 PDF 文字层提取、书籍结构整理、页眉页脚映射或 EPUB 排版规则，也不会替换现有中文模型。
 
 ## 使用与离线准备

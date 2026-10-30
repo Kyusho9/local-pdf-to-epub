@@ -5,7 +5,7 @@
 ## 推荐：复制应用和离线资源 ZIP
 
 1. 在另一台可联网设备取得本版本应用包与 `LocalPDFtoEPUB-ocr-resources.zip`。
-2. 将两个文件复制到目标电脑，解压应用并启动。
+2. 将两个文件复制到目标电脑，解压应用并启动。Windows 使用 `Start-LocalPDFtoEPUB.cmd`，并需已安装 VC++ v14 x64 运行库；可从[微软官网](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist)单独取得安装器后复制到离线电脑安装，无需 Visual Studio。
 3. 打开「资源与设置」，选择资源存储目录，点击导入资源包；软件检查版本、文件路径和 SHA-256。
 4. 资源检查显示可用后导入 PDF、选输出并转换。目标电脑无需联网或安装 Python。
 
@@ -43,7 +43,9 @@ EPUBCheck 是可选的额外格式校验组件。完整校验需要本地 Java 1
 本机服务只监听127.0.0.1随机端口，不是互联网推理服务；随机路径隔离所选书与静态资源。转换流程仍可全部禁网，阅读器只需允许本机回环，外网可以继续阻断。CSS、字体、图像和脚本均来自本地，无账号或CDN。
 
 
-## 0.1.5 DirectML 与 NVIDIA CUDA 运行包
+## DirectML 与 NVIDIA CUDA 运行包
+
+0.1.6 公开 Release 不上传历史 GPU 整合 ZIP（其中包含微软 VC DLL）。下文记录现有 GPU 功能及本地包的组成；已准备的匹配版本仍可导入，或由用户主动从官方来源下载准备。应用不会在转换时补下载。
 
 CPU 方式无需 GPU 包。Windows 新任务默认尝试 DirectML，也可选择 CUDA 或 CPU；缺少 GPU 包时默认明确回退 CPU。模型仍使用同一个 OCR 资源包。CUDA 运行包约下载 2.16 GB、落地 2.95 GB，带私有 Python、GPU 推理库、NVIDIA runtime 和 VC Runtime，不要求系统安装 Python 或 CUDA Toolkit。驱动必须由系统提供。可以在联网电脑准备后导出 ZIP，离线电脑只需复制并导入。DirectML 独立包官方下载约 121 MB、落地约 262 MB，离线 ZIP 约 88 MB（`LocalPDFtoEPUB-directml-runtime-win-x64-1.zip`）；不需要 NVIDIA CUDA 库；GPU 选择和资源选择必须匹配。详见 [GPU 准备、许可与实测范围](GPU_RUNTIME.md)。
 

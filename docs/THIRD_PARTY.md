@@ -7,7 +7,7 @@
 | 组件 | 首版用途 | 许可与再分发要点 | 官方依据 |
 | --- | --- | --- | --- |
 | CPython 3.12 | 随应用打包的解释器 | PSF License，保留其完整许可和版权声明；底层依赖有各自许可 | [Python license](https://docs.python.org/3.12/license.html) |
-| PySide6 / Shiboken6 / Qt 6.12.0 | 原生桌面界面，使用 Qt Core、Gui、Widgets | 开源版 PySide6 为 LGPLv3 / GPLv3 路线，也有商业许可。所用 Qt 模块采用 LGPLv3；保留通知和许可，允许用户替换兼容 Qt/PySide 库，不禁止为调试库修改而逆向。发行者应按所选许可履行对应源码提供义务 | [Qt for Python licenses](https://doc.qt.io/qtforpython-6/licenses.html)，[Qt LGPL obligations](https://www.qt.io/licensing/open-source-lgpl-obligations) |
+| PySide6 / Shiboken6 / Qt 6.12.0 | 原生桌面界面，实际包含 Core、Gui、Widgets、Network、Svg；Mac 另带 DBus | 开源版 PySide6 为 LGPLv3 / GPLv3 路线，也有商业许可。所用 Qt 模块采用 LGPLv3；保留通知和许可，允许用户替换兼容 Qt/PySide 库，不禁止为调试库修改而逆向。对应源码随 Release 独立提供，含图像插件和翻译源 | [Qt for Python licenses](https://doc.qt.io/qtforpython-6/licenses.html)，[对应源码与替换](THIRD_PARTY_SOURCES.md) |
 | pdfplumber 0.11.6 | 文字位置、表格线、图片区域与版式读取 | MIT，保留版权和许可 | [pdfplumber](https://github.com/jsvine/pdfplumber/blob/v0.11.6/LICENSE.txt) |
 | pdfminer.six | PDF 文本解释，pdfplumber 依赖 | MIT，保留版权和许可 | [pdfminer.six](https://github.com/pdfminer/pdfminer.six/blob/master/LICENSE) |
 | pypdfium2 5.14.0 | 本机 PDF 渲染和原页回查 | 包装层使用 Apache-2.0 / BSD-3-Clause 组合；PDFium 及 bundled 第三方的许可单独保留。本版本 wheel 的 `.dist-info/licenses/` 下含 18 份许可文件，全部复制入包 | [pypdfium2 licensing](https://github.com/pypdfium2-team/pypdfium2#licensing)，[PDFium license](https://pdfium.googlesource.com/pdfium/+/refs/heads/main/LICENSE) |
@@ -26,11 +26,11 @@
 
 ## 目录包与源码
 
-`scripts/build.py` 在构建前复制 wheel 附带的 LICENSE、COPYING、NOTICE、版权文件，输出机器可读库存；应用包内 `licenses/` 保留这些文件。第三方共享库保持独立，不静态嵌入自有二进制；源程序、固定依赖和构建 spec 一并交付，便于重新链接或替换 LGPL 组件。兼容替换库后可能需重新执行平台签名或重建应用。没有修改的上游源码可从库存中的版本/源仓库取得。
+`scripts/build.py` 在构建前复制 wheel 附带的 LICENSE、COPYING、NOTICE、版权文件，输出机器可读库存；应用包内 `licenses/` 保留这些文件。第三方共享库保持独立，不静态嵌入自有二进制；源程序、固定依赖和构建 spec 一并交付，便于重新链接或替换 LGPL 组件。兼容替换库后可能需重新执行平台签名或重建应用。
 
 实测 PySide6 Essentials 6.12.0 wheel 未带独立许可文本，因此额外从 Qt `v6.12.0` 官方源仓库取得 LGPL-3.0、GPL-3.0 与 Qt GPL exception 文本，保存于 `packaging/licenses/Qt-6.12.0/` 并随应用打包；这部分不伪装为 wheel 原有文件。
 
-公开再分发前，发布者仍须按 LGPL 等实际适用条款提供完整对应源码或合规的获取方式；仅有本说明和上游网址不能代替条款所要求的源码提供安排。当前交付是本地可核查构建，不包含开发者证书、公证或商业 Qt 许可。
+0.1.6 的 [Release 对应源码附件](https://github.com/Kyusho9/local-pdf-to-epub/releases/download/v0.1.6/LocalPDFtoEPUB-0.1.6-third-party-sources.zip) 由本项目直接提供：Qt Base / SVG / Image Formats / Translations / Tools 6.12.0、PySide / Shiboken 6.12.0、GEOS 3.14.1、Shapely 2.2.0，以及 Windows 实际 FFmpeg DLL 对应的完整源码和构建配方。上游归档未修改，来源 URL、版本、字节数、SHA-256 和二进制关联在包内记录。详情及替换/重新链接方法见 [THIRD_PARTY_SOURCES.md](THIRD_PARTY_SOURCES.md)。主应用自身源码与 Vivliostyle 对应源码另随应用源码 ZIP 交付；这些附件和通知应随二进制发布保留，不能只留下上游网址。当前包不包含开发者证书、公证或商业 Qt 许可。
 
 
 ## OpenCV 的实物二进制审查
@@ -42,6 +42,8 @@ Mac 发布改用本项目从固定官方源码构建的最小图片处理 wheel�
 FlatBuffers 的 wheel 同样未带完整许可文本，另从对应 `v25.12.19` 官方源码补入 Apache-2.0 文本，并通过 `supplemental_license_files` 与 wheel 自有许可分开记录。
 
 Windows x64 官方 `opencv-python==4.11.0.86` wheel 已做静态原生 DLL 审查：FFmpeg 字符串为 LGPL-2.1-or-later，没有 `--enable-gpl` 或 x264/x265；详细官方 wheel SHA 和审查结果在 `packaging/opencv-windows-4.11-audit.json`。许可实物检查与运行验收分开记录；Windows 原生 GUI、OCR 和系统防火墙验收见 `docs/WINDOWS_TEST_REPORT.md`。
+
+0.1.6 进一步核对该 DLL 为 FFmpeg 4.4.5；实际 DLL 与 OpenCV 官方二进制提交 `d63d7c154c57242bf2283be61166be2bd30ec47e` 的 Git blob 一致。同次官方源码提交 `02a08baa7b8d330364c35477ba50524db8e4d335`、OpenCV wrapper 的完整对应提交 `09892c9d1706f40342bda0bc404580f63492d9f8`、libvpx / AOM / OpenH264 API 头文件及原始构建配方全部收入上述第三方源码附件。不分发 Cisco OpenH264 编解码 DLL。已验证源码关联与展开，未宣称重新编译或二进制逐字节复现。
 
 
 ## 0.1.4 的独立本地阅读器
@@ -60,7 +62,9 @@ NVIDIA CUDA 12.8（runtime 12.8.90、NVRTC/NVJitLink 12.8.93、cuBLAS 12.8.4.1�
 
 DirectML 包固定 `onnxruntime-directml==1.22.0`，其中原始 `DirectML.dll` 版本为 1.15.4，采用 Microsoft 专有许可，不能套用 ORT 的 MIT。另从官方 Microsoft.AI.DirectML 1.15.4 NuGet 包保留完整 LICENSE、LICENSE-CODE 与 ThirdPartyNotices：NuGet 与 wheel DLL 的证书区字节不同，六个 PE 节逐字节相同；不替换或修改 wheel DLL。来源和实物比对见 `artifacts/gpu-0.1.5/dml/{nuget-license-provenance,directml-binary-provenance}.json`。DirectML 不包含 NVIDIA 库，文件清单在 `directml_runtime_catalog.json` / `directml_runtime_manifest.json`。官方依据：[DirectML](https://github.com/microsoft/DirectML)、[ONNX Runtime DirectML](https://onnxruntime.ai/docs/execution-providers/DirectML-ExecutionProvider.html)。
 
-Microsoft VC Runtime 14.44.35112 来自固定官方 VSIX 的 x64 release CRT 目录，保留原始 DLL 字节和适用条款；不包含 debug_nonredist。VC Runtime 不是 MIT。公开再分发须满足适用 Visual Studio 许可和 REDIST 条件，不能只凭最终用户运行许可断言有无限再分发权。此处没有安装 Visual Studio 或更改用户全局 VC 环境。
+历史本地 GPU 运行包中的 Microsoft VC Runtime 14.44.35112 来自固定官方 VSIX 的 x64 release CRT 目录，不包含 debug_nonredist。VC Runtime 不是 MIT；[微软说明](https://learn.microsoft.com/cpp/windows/redistributing-visual-cpp-files)要求公开再分发者满足适用 Visual Studio 许可和 REDIST 条件。
+
+**0.1.6 公开附件不捆绑 Microsoft VC/UCRT DLL，也不上传历史 DirectML / CUDA 整合 ZIP。** Windows 应用使用目标系统已安装的 Visual C++ v14 x64 运行库（14.44.35229 或更新）。用户从[微软官方下载页](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist)取得运行库安装器，可复制到离线电脑自行安装；本项目不镜像该安装器。`Start-LocalPDFtoEPUB.cmd` 仅检查系统组件，并将用户本机的 `MSVCP140.dll` 复制到应用私有的 Shapely 依赖位置；该生成副本不属于公开 ZIP，使用者不应把它误当作本项目授权再分发的文件。应用和使用者均不需要安装 Visual Studio。没有为本次发布安装 Visual Studio、修改系统 DLL 或调整全局 CUDA 环境。
 
 其余 GPU 数值/图像依赖与主应用采用相同固定版本；OpenCV Windows 的未使用 FFmpeg DLL 不收入该 GPU 附件。Shapely/GEOS 等共享库和完整许可仍单独保留。GPU 资源里的可执行组件不因本应用 MIT 而改变原许可。运行包所有来源 URL、原包摘要、精确提取成员和最终文件摘要分别在 `gpu_runtime_catalog.json` 与 `gpu_runtime_manifest.json`，GPU 附件内独立保留许可；主应用既有开发环境库存不冒充 GPU 库存。
 

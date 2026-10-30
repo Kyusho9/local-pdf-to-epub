@@ -1,0 +1,267 @@
+{
+  "release": "0.1.6",
+  "scope": "Corresponding sources for the unchanged LGPL libraries actually shipped in LocalPDFtoEPUB 0.1.6, with rebuild helpers and provenance.",
+  "source_provenance": "COMPONENTS.json",
+  "files": [
+    {
+      "path": "COMPONENTS.json",
+      "bytes": 10700,
+      "sha256": "fc30f484a351ec88d03779fe4a1e9ea233cbc5837b61f03c28b28520df831bc1"
+    },
+    {
+      "path": "LICENSE.project-MIT",
+      "bytes": 1084,
+      "sha256": "e87664396dd9c242d3ee7a74f1b6674c98b50d18f97750af8879ecf5de7f6c14"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1481,
+      "sha256": "0d56490327a6379ff7b1335ce56a0d0558ae209e1f189af372e5ad3b2818c81d"
+    },
+    {
+      "path": "ffmpeg/README-corresponding-sources.md",
+      "bytes": 4674,
+      "sha256": "4f7e877ea96b45f8f05d46d73a5457f64848988e35d7347b9bca3fd1b1e72d26"
+    },
+    {
+      "path": "ffmpeg/binary-identity.json",
+      "bytes": 675,
+      "sha256": "714fc95b68c8d4a328a2b822ba83b3092970b8ba0fa2266f29f6fab49906831b"
+    },
+    {
+      "path": "ffmpeg/build_recipe/.gitignore",
+      "bytes": 27,
+      "sha256": "e89481e25fea5cb233a99ffc10e9453fd89fd094db3bf700aa6c99639486c8ac"
+    },
+    {
+      "path": "ffmpeg/build_recipe/.gitmodules",
+      "bytes": 74,
+      "sha256": "a36a7be41bc504568605015875c28e486ca79c90295321935fa9440c53ecd9bc"
+    },
+    {
+      "path": "ffmpeg/build_recipe/build_update.sh",
+      "bytes": 2780,
+      "sha256": "394ad2f5d4ebd5380b734f203b4834f956380bf9bd197fc44aac23d57b0547f2"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/archive_src.sh",
+      "bytes": 1169,
+      "sha256": "20c5a48f3447d1a8de5449fdff1f05dda6a6118f3022faa6ad14b4456790cfb6"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/build_via_docker.sh",
+      "bytes": 603,
+      "sha256": "a6899f29efcbc5cacc879646c40cd79d71f6a0b651b084879ad672e1695b8549"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/build_videoio_plugin.sh",
+      "bytes": 3666,
+      "sha256": "d9d6a15cfdb90eebc3136bad76eea3eb5d26cec97bd7b04c4063ac26f8cfde02"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/docker/Dockerfile",
+      "bytes": 725,
+      "sha256": "3bd9dfbab22a85a4a7f81073f28ffc0e47b1dd6beb7b7079eafad09ad647f125"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/docker/entry.sh",
+      "bytes": 207,
+      "sha256": "87dd5b2a9bd7bbd36fbdf4d2416cefd9ed262c92b56095274e603b261d2e3200"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/download_src.sh",
+      "bytes": 976,
+      "sha256": "6381c28ab2c42946e7c98824ae3742d6be772aea5fa7a358c082d3786ae17109"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/dump_versions.sh",
+      "bytes": 138,
+      "sha256": "8136820a53e0322caa36363dcdfba4268252c8258058fa78555d576422514ed1"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/ffmpeg_version.cmake",
+      "bytes": 362,
+      "sha256": "94d8bef0d4441f4dc4198f55278ae42cda5da762c9991daf83be76167d82c447"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/make_mingw.sh",
+      "bytes": 6016,
+      "sha256": "d7c7428676ac1c2fb020e9d739a67e624588f204f8c4b42541d9fdf81ad13119"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/mingw-toolchain-i686.cmake",
+      "bytes": 461,
+      "sha256": "f4e407e61fe818a12f88e74eac5b91a901361abc1cbfc1d20578aeef841c88f3"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/mingw-toolchain-x86_64.cmake",
+      "bytes": 466,
+      "sha256": "687a0f7d6919a76305dbeb70c5216835ff562c2f8ddc8ff93bb5b93e661e8597"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/opencv_ffmpeg.rc",
+      "bytes": 1089,
+      "sha256": "938cd1253c233f821104263c887a5db8c49481810c0455d14d134aa93f797f94"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/openh264_wrapper/wels/codec_api.h",
+      "bytes": 6776,
+      "sha256": "42696058aa82211438fda15f5f9c2402ff2153e43716ea67819c1f29a6bedec1"
+    },
+    {
+      "path": "ffmpeg/build_recipe/ffmpeg/openh264_wrapper/wels/openh264_wrapper.c",
+      "bytes": 409,
+      "sha256": "af0c1b0d4fbec2b2c582eb31f4fcda9339d91d24b09cf4141198833c0ad1330d"
+    },
+    {
+      "path": "ffmpeg/build_recipe/license.txt",
+      "bytes": 27393,
+      "sha256": "1f9d4168b4a9a2bdd1851023735a41d0ab09ffa5fcc1a721a99ebc1d7d35a9c5"
+    },
+    {
+      "path": "ffmpeg/build_recipe/readme.txt",
+      "bytes": 2467,
+      "sha256": "26e4734e7ac1e72adac7a06a747ac9a997ee3714bc2ed8b745ff27dee35a2ad9"
+    },
+    {
+      "path": "ffmpeg/manifest.json",
+      "bytes": 6574,
+      "sha256": "18e1e33c3892434c9c2b63d1406c94c311fa2d8d23b0117a61777bfb2cfa5ebc"
+    },
+    {
+      "path": "ffmpeg/opencv-3rdparty-sources-commit.json",
+      "bytes": 7181,
+      "sha256": "6f18637476b0679be3308e0f6aab8ece85bcf6c2a8b38cd7279dbcdee7388e41"
+    },
+    {
+      "path": "ffmpeg/opencv-3rdparty-sources-tree.json",
+      "bytes": 9254,
+      "sha256": "2933511c770e97edcda07a9e98f6dad44624e6904440df3d3a5532688cb288a0"
+    },
+    {
+      "path": "ffmpeg/opencv-3rdparty-tree.json",
+      "bytes": 6172,
+      "sha256": "c0f3c539a2da89b6fd59c5722a05fa06f4fd83915a3929c826cea1c43c692c4a"
+    },
+    {
+      "path": "ffmpeg/opencv-full-source-record.json",
+      "bytes": 469,
+      "sha256": "872714528b8f27a5aef0c170daf2ef36c66c8df40d7aef19003e8abc4c5d37df"
+    },
+    {
+      "path": "ffmpeg/opencv-python-4.11.0.86-ffmpeg.cmake",
+      "bytes": 1724,
+      "sha256": "2774f0c317a565f05952e1017f1a475716fab142cf468ccef17f7cfb95167b20"
+    },
+    {
+      "path": "ffmpeg/opencv-python-source-provenance.json",
+      "bytes": 491,
+      "sha256": "40979a7d719d4c7f4f53d41fb65d6d206c963d2fec4af6dfe63889a9cee94c4d"
+    },
+    {
+      "path": "ffmpeg/prepare_sources.py",
+      "bytes": 3318,
+      "sha256": "36852fe23457ae5e223582669eddeef9f2e17dfb8773467f083126af1c280c42"
+    },
+    {
+      "path": "ffmpeg/recipe-records.json",
+      "bytes": 7902,
+      "sha256": "5f30938cc646890b243f62667f738e640f617835ea79c813f1a06c395a9e939f"
+    },
+    {
+      "path": "ffmpeg/source-records.json",
+      "bytes": 2835,
+      "sha256": "a5b62a7ee24429bbd0f5b8b51f85a754fb466d787dbfc4d724844c06f9b3c76d"
+    },
+    {
+      "path": "ffmpeg/sources/build/aom/aom-src-v3.11.0.tar.xz",
+      "bytes": 3849276,
+      "sha256": "a11e9d5c61a6b0aa415cf9de16c6c18c41b7dbe1b5beb91631f54a13a79ff0c2"
+    },
+    {
+      "path": "ffmpeg/sources/build/ffmpeg/ffmpeg-src-n4.4.5.tar.xz",
+      "bytes": 9394088,
+      "sha256": "ed9e77cc24570d66881b058af06e7e86586a9c960d6f6712ce086fce881888ed"
+    },
+    {
+      "path": "ffmpeg/sources/build/libvpx/libvpx-src-v1.15.0.tar.xz",
+      "bytes": 4389028,
+      "sha256": "6c32d367e9330c43850e371af6aa2018eb1045b987fc6253b3d2d90cf16a66c2"
+    },
+    {
+      "path": "ffmpeg/sources/build/openh264/openh264-api-headers-v1.8.0.tar.xz",
+      "bytes": 15432,
+      "sha256": "90c9333fe8dd9ce8f6585b7a2dae595276338f42b2850dbe2a75218e2957d1db"
+    },
+    {
+      "path": "ffmpeg/sources/opencv/opencv-09892c9d1706f40342bda0bc404580f63492d9f8.tar.gz",
+      "bytes": 95060473,
+      "sha256": "2d6b99bf756a03b81caed7223fdf1bbe1c60bf34c6babee6e734cf6b7afd33e2"
+    },
+    {
+      "path": "ffmpeg/sources/opencv/opencv-videoio-ffmpeg.tar.xz",
+      "bytes": 35196,
+      "sha256": "04434d8dc49f2baac9c9e3e04e0660c6cdc27fa5a8619bc29de761f5bee8d961"
+    },
+    {
+      "path": "ffmpeg/sources/opencv_ffmpeg.tar.xz",
+      "bytes": 16976,
+      "sha256": "84f6f5cfb71b6729cd19669acd1d8f399f706cdc81d5fddaedc06b24de3559b9"
+    },
+    {
+      "path": "geos/geos-3.14.1.tar.bz2",
+      "bytes": 7013834,
+      "sha256": "3c20919cda9a505db07b5216baa980bacdaa0702da715b43f176fb07eff7e716"
+    },
+    {
+      "path": "pyside/pyside-setup-everywhere-src-6.12.0.tar.xz",
+      "bytes": 18211772,
+      "sha256": "099c1a597cf33c1b000e11cf68a0b82d216fb802bf81726efc720394f10c7751"
+    },
+    {
+      "path": "qt/qtbase-everywhere-src-6.12.0.tar.xz",
+      "bytes": 51220268,
+      "sha256": "a951bd163c7b80fc6b8c88d7668fb56abf91c152373e13c10666763238131307"
+    },
+    {
+      "path": "qt/qtimageformats-everywhere-src-6.12.0.tar.xz",
+      "bytes": 1848620,
+      "sha256": "0943132b5db8de6b6a7f1d162682173e8763c7ed94e80fd39113292845f67762"
+    },
+    {
+      "path": "qt/qtsvg-everywhere-src-6.12.0.tar.xz",
+      "bytes": 2341876,
+      "sha256": "e4ab39534ec97987b1b9b60ef7f4d3253d5912a69f8c713a01753174a4029331"
+    },
+    {
+      "path": "qt/qttools-everywhere-src-6.12.0.tar.xz",
+      "bytes": 10819720,
+      "sha256": "8dab8f3611496486a470ad5f115ceea584f36bc22a2b8b6f6ebdbafbb8160693"
+    },
+    {
+      "path": "qt/qttools-source.json",
+      "bytes": 791,
+      "sha256": "825c8bae5cacbc5ee8b208ec13d9578176505330713eb93ba4dc839cdbf3950e"
+    },
+    {
+      "path": "qt/qttranslations-everywhere-src-6.12.0.tar.xz",
+      "bytes": 1745884,
+      "sha256": "85929c0c30d6f273f23bd879bb69803ea17b010ab73cab2f8abf95357f6f6bbb"
+    },
+    {
+      "path": "shapely/shapely-2.2.0.tar.gz",
+      "bytes": 380326,
+      "sha256": "e8865e553d874a1ec4a032057ea81fca9def37b188cd8fb550af3b3480b3f88c"
+    },
+    {
+      "path": "shapely/source.json",
+      "bytes": 485,
+      "sha256": "89725149673ee6949c5036877bb0265c7aa6d6d34e349cde346a23fc1f79d528"
+    },
+    {
+      "path": "upstream-sources.json",
+      "bytes": 6843,
+      "sha256": "eec8fa937e31e63b910a3d76bd4db4b2e72485f2621e3337a3c122c5ad8ca33b"
+    }
+  ]
+}

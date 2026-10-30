@@ -25,7 +25,7 @@ for distribution in ("rapidocr-onnxruntime", "onnxruntime", "pypdfium2", "pdfplu
     datas += copy_metadata(distribution)
 if (root / "packaging" / "licenses").is_dir():
     datas += [(str(root / "packaging" / "licenses"), "licenses")]
-for document in ("THIRD_PARTY.md", "PLATFORMS.md"):
+for document in ("THIRD_PARTY.md", "THIRD_PARTY_SOURCES.md", "PLATFORMS.md"):
     if (root / "docs" / document).exists():
         datas += [(str(root / "docs" / document), "docs")]
 
