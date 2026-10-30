@@ -2,15 +2,15 @@
 
 默认离线的简体中文桌面软件。选择或拖入 PDF，导入本地 OCR 资源，选择输出，转换为可调字号、可重排、带目录与原图的 EPUB 3。
 
-项目主页：[Kyusho9/local-pdf-to-epub](https://github.com/Kyusho9/local-pdf-to-epub)。仓库已创建，源码和新版资源将在本轮验收完成后发布。
+项目主页：[Kyusho9/local-pdf-to-epub](https://github.com/Kyusho9/local-pdf-to-epub)。本轮 GitHub 公开源码，预编译应用 ZIP、离线资源及完整源码 ZIP 在本机交付；尚未上传 GitHub Release 附件。资源准备与构建方法见下文。
 
-**当前版本为 0.1.6，两平台包已构建，正在完成最终交付验收。** 本轮改进扫描封面与正文小图保留、倾斜扫描段落整理和重复网址页脚识别。Mac 完整测试与实际断网验收已通过；Windows 完整测试与包校验已通过，DirectML 冻结 GUI 验收正在进行。进度和限制见 [0.1.6 记录](docs/RELEASE_0.1.6.md)。
+**当前版本为 0.1.6，Windows / Mac 独立包均已通过本机实际验收。** 本轮改进扫描封面与正文小图保留、倾斜扫描段落整理和重复网址页脚识别。两平台已完成完整工程测试、冻结 GUI 断网转换、人工修订和版面重整；Windows 使用真实 DirectML，Mac 使用 CPU。具体证据、包摘要和验证边界见 [0.1.6 记录](docs/RELEASE_0.1.6.md)。
 
 Windows 新任务默认尝试 DirectML，NVIDIA 用户可选 CUDA；macOS 默认 CPU。GPU 组件独立准备，缺失或失败时默认明确回退 CPU。需要页眉、页脚和原页码时勾选保留，并用软件内的“兼容阅读器打开”。正文始终可以调整字号和重排。
 
 ## 普通用户启动
 
-1. Windows 解压 `LocalPDFtoEPUB-0.1.5-windows-x64.zip` 并运行完整目录中的 `LocalPDFtoEPUB.exe`；Mac 解压对应 `macos-arm64.zip` 后打开 `.app`。程序含运行时，不需要 Python，不能只复制 EXE。
+1. Windows 解压 `LocalPDFtoEPUB-0.1.6-windows-x64.zip` 并运行完整目录中的 `LocalPDFtoEPUB.exe`；Mac 解压 `LocalPDFtoEPUB-0.1.6-macos-arm64.zip` 后打开 `.app`。程序含运行时，不需要 Python，不能只复制 EXE。
 2. 在资源设置导入 `LocalPDFtoEPUB-ocr-resources.zip`，或主动下载。Windows 使用 GPU 时另导入对应的 DirectML / CUDA 运行包；默认 DirectML，缺包默认明确回退 CPU。离线目标机复制应用和资源包即可。页边阅读器已包含在应用包内，不会在读书时下载资源。
 3. 选 PDF 和输出位置。需要原页边文字时勾选“保留页眉、页脚和原页码（兼容阅读器）”；默认不勾选。不确定是否属于页边的文字仍保留待核对。
 4. 校对中可改标题、段落、确认或撤销页码推算、回查原页、重试失败页。保存并导出后，点击“兼容阅读器打开”；保持本地书坊运行，在已验证的 Edge/Chromium 浏览器用 A+ / A− 调字号（其他浏览器待验）。浏览器只连接本机随机端口，不使用云端服务。
@@ -61,7 +61,7 @@ PYTHONPATH=src .venv/bin/python -m local_epub gui --open-reader artifacts/with-m
 PYTHONPATH=src .venv/bin/python -m local_epub status artifacts/my-task
 ```
 
-0.1.6 增加 `rebuild-layout`，从已有的原始识别结果重新整理段落和图片位置；不重新运行 OCR，也不会把这个操作称为提高了识别准确率。现阶段使用前保留完整任务目录，遇到来源变化的人工修订会留作冲突提示，不能按旧块编号直接覆盖。示例：
+0.1.6 增加 `rebuild-layout`，从已有的原始识别结果重新整理段落和图片位置；不重新运行 OCR，也不会把这个操作称为提高了识别准确率。GUI 对应“重新整理版面”。保留完整任务目录；遇到来源变化的人工修订会留作冲突提示，不能按旧块编号直接覆盖。示例：
 
 ```sh
 PYTHONPATH=src .venv/bin/python -m local_epub rebuild-layout artifacts/my-task --output artifacts/reflowed.epub
@@ -91,7 +91,7 @@ Windows 实际防火墙和交互桌面验收分别使用 `scripts/windows-offlin
 EPUBCheck 5.4.0 与 Java 21 已用于项目验收；Java/JAR 尚未捆绑进主应用。应用明确区分内置检查、EPUBCheck 未运行/通过/失败，以及需要人工校对的内容疑点。格式通过从不代表文字准确。
 
 - [0.1.5 统一 ONNX Runtime GPU 执行与实际验收](docs/RELEASE_0.1.5.md)
-- [0.1.6 扫描图片、段落与网址页脚改进（验收中）](docs/RELEASE_0.1.6.md)
+- [0.1.6 扫描图片、段落与网址页脚改进及实际验收](docs/RELEASE_0.1.6.md)
 - [Windows DirectML / CUDA 运行包准备与限制](docs/GPU_RUNTIME.md)
 - [0.1.4 真正页边显示与兼容阅读器](docs/RELEASE_0.1.4.md)
 - [0.1.3 页边需求纠正、OCR 修复与验收状态](docs/RELEASE_0.1.3.md)

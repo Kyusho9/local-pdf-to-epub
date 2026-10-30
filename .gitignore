@@ -35,3 +35,8 @@ user-*/
 .env.*
 *.pem
 *.key
+.DS_Store
+.codex/
+.agents/
+# The public tree records the official URL/hash; the offline source ZIP keeps it.
+/vendor/sources/opencv-python-*.tar.gz

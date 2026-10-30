@@ -1,13 +1,13 @@
 {
   "format_version": 1,
   "version": "0.1.6",
-  "created_utc": "2026-10-30T04:42:07.663954+00:00",
+  "created_utc": "2026-10-30T04:54:49.280540+00:00",
   "status": "isolated_tree_verified_not_published",
   "git_initialized": false,
   "uploaded": false,
   "scope": "Explicit source directories only; no artifacts, user documents, caches, environments, or runtime packages",
   "file_count": 274,
-  "bytes": 24951039,
+  "bytes": 24952221,
   "files": [
     {
       "path": ".github/workflows/build-windows.yml",
@@ -16,8 +16,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 638,
-      "sha256": "33571a6a6349016a204a8c010e4ac0009222c508773d3336f52d1f7b3c236712"
+      "bytes": 786,
+      "sha256": "a2298588b05b7f3c83377f425f99bd8bc411de84ffbc9118a550a172d64db670"
     },
     {
       "path": "LICENSE",
@@ -26,8 +26,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11933,
-      "sha256": "48569ab4fd91c1d95bc239da8c15ca43d3d3c8cbe42877107582cea63d7a28c9"
+      "bytes": 12102,
+      "sha256": "ef70ec3bf22bb8514e8b10b15068f63a15a17fec18f27e2bfbb15412d70bc31c"
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -86,8 +86,8 @@
     },
     {
       "path": "docs/RELEASE_0.1.6.md",
-      "bytes": 4911,
-      "sha256": "1065883472a6952680b36f766977f8d39bb015f6909b7c95321ee20844e2f09d"
+      "bytes": 5776,
+      "sha256": "0323e107287253a11d80a63f0621387e2cf6195da9f81c4f160ec6eb0170aa49"
     },
     {
       "path": "docs/ROADMAP.md",
