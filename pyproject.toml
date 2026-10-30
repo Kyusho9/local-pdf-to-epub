@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools==77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-pdf-epub"
+version = "0.1.6"
+description = "Offline Chinese PDF to reflowable EPUB desktop application"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+dependencies = [
+  "PySide6-Essentials==6.12.0", "pdfplumber==0.11.6", "pypdfium2==5.14.0",
+  "rapidocr-onnxruntime==1.4.4", "onnxruntime==1.20.1", "numpy==1.26.4",
+  "Pillow==11.1.0", "pypdf==5.4.0"
+]
+
+[project.optional-dependencies]
+dev = ["reportlab==4.3.1", "pytest==8.3.5", "pyinstaller==6.12.0"]
+
+[project.scripts]
+local-epub = "local_epub.cli:main"
+[project.gui-scripts]
+local-epub-gui = "local_epub.gui:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+local_epub = ["*.json", "model_licenses/*"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

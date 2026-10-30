@@ -1,0 +1,10 @@
+{
+  "package": "opencv-python",
+  "version": "4.11.0.86",
+  "source_url": "https://files.pythonhosted.org/packages/17/06/68c27a523103dad5837dc5b87e71285280c4f098c60e4fe8a8db6486ab09/opencv-python-4.11.0.86.tar.gz",
+  "source_sha256": "03d60ccae62304860d232272e4a4fda93c39d595780cb40b161b310244b736a4",
+  "source_bytes": 95171956,
+  "filename": "opencv-python-4.11.0.86.tar.gz",
+  "downloaded_from": "https://pypi.tuna.tsinghua.edu.cn/packages/17/06/68c27a523103dad5837dc5b87e71285280c4f098c60e4fe8a8db6486ab09/opencv-python-4.11.0.86.tar.gz",
+  "mirror_bytes_match_official_sha256": true
+}

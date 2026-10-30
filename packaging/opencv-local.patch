@@ -1,0 +1,20 @@
+--- a/setup.py
++++ b/setup.py
+@@ -102,7 +102,7 @@
+     package_data = {
+         "cv2": ["*%s" % sysconfig.get_config_vars().get("SO"), "version.py"]
+         + (["*.dll"] if os.name == "nt" else [])
+-        + ["LICENSE.txt", "LICENSE-3RD-PARTY.txt"],
++        + ["LICENSE.txt", "LICENSE-3RD-PARTY.txt", "LOCAL_BUILD.json", "LOCAL_LICENSES.txt"],
+         "cv2.data": ["*.xml"],
+     }
+ 
+@@ -450,7 +450,7 @@
+                     del m, fslash_relpath, new_install_relpath
+                 else:
+                     # gapi can be missed if ADE was not downloaded (network issue)
+-                    if not found and "gapi" not in relpath_re:
++                    if not found and not any(optional in relpath_re for optional in ("gapi", "py.typed", "/typing/")):
+                         raise Exception("Not found: '%s'" % relpath_re)
+                 del r, found
+ 

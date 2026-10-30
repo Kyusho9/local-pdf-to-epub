@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "purpose": "Vivliostyle 2.45.2 matching upstream source and unmodified npm distributions",
+  "git_commit": "8f31c04f2dd3a3d992016cec21cf69acf221a821",
+  "license": "AGPL-3.0 with separately licensed dependencies",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1535,
+      "sha256": "e00a8b3802f29f83c9135ba5cf40fec09d0896ec23e544efc090fcdcee790562"
+    },
+    {
+      "path": "core-2.45.2.tgz",
+      "bytes": 1117264,
+      "sha256": "114d4fb8deb5bdafc2aeb2baa983e38c869ff7103ae4f4c4e1550726dd99df58"
+    },
+    {
+      "path": "dependency-metadata.json",
+      "bytes": 1719,
+      "sha256": "296db6c377893bd6d132ab5a019aa2e692b7336f1fcabb69b4e2e8ccef39ed72"
+    },
+    {
+      "path": "fast-diff-1.3.0.tgz",
+      "bytes": 14328,
+      "sha256": "77f602d83366f68f4dfb5dd9ba636933dc0047502da4d48d914d1d361c517d4a"
+    },
+    {
+      "path": "fontawesome-free-5.15.4.tgz",
+      "bytes": 4246572,
+      "sha256": "6d890608585d48f50f6434a90ed3f581e76d360edb26800dba2f782ef3e77e11"
+    },
+    {
+      "path": "i18next-3.5.2.tgz",
+      "bytes": 92567,
+      "sha256": "df0e522d21650a43bf0102de288015f202185bc62cf6f5241c38913e5585f679"
+    },
+    {
+      "path": "i18next-ko-3.0.1.tgz",
+      "bytes": 21800,
+      "sha256": "b9673d769c1a81ce4c9e5d3f4000a435727c789279b74efdbb6ab1731795e3bc"
+    },
+    {
+      "path": "knockout-3.5.3.tgz",
+      "bytes": 109307,
+      "sha256": "2af98057a5689e8f69de6e94aa6daa53b0500278bdbedc4cb35f46e934b788fe"
+    },
+    {
+      "path": "viewer-2.45.2.tgz",
+      "bytes": 1409696,
+      "sha256": "f2624da43a8c5475ffdc95a70faa95c279830a730b0e4fa5dbf49571b56b8556"
+    },
+    {
+      "path": "viewer-npm-metadata.json",
+      "bytes": 4358,
+      "sha256": "ea8d080b255ca2892f611d5df7be5e3ad9a553317016ba847aefdaa59d2fba5a"
+    },
+    {
+      "path": "vivliostyle.js-8f31c04f2dd3a3d992016cec21cf69acf221a821.tar.gz",
+      "bytes": 2067744,
+      "sha256": "0218a7d7ffb0549e304468c289e22bea5e5097fa4beba9087f53863b94434880"
+    }
+  ]
+}

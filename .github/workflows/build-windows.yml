@@ -1,0 +1,45 @@
+name: Build Windows x64 candidate
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+jobs:
+  build:
+    runs-on: windows-2022
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          architecture: 'x64'
+      - name: Install locked build environment
+        shell: pwsh
+        run: |
+          python -m venv .venv
+          .venv\Scripts\python.exe -m pip install -r requirements.lock
+      - name: Build portable application
+        shell: pwsh
+        run: .venv\Scripts\python.exe scripts\build.py
+      - name: Prepare separate OCR resource pack from the installed fixed wheel
+        shell: pwsh
+        run: |
+          $env:PYTHONPATH = Join-Path (Get-Location) 'src'
+          .venv\Scripts\python.exe -m local_epub resources prepare-installed --dir resources
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          .venv\Scripts\python.exe -m local_epub resources export --dir resources --pack dist\LocalPDFtoEPUB-ocr-resources.zip
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Convert real samples with the packaged CLI and system-only PATH
+        shell: pwsh
+        run: |
+          .venv\Scripts\python.exe scripts\build-smoke.py --resources resources
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LocalPDFtoEPUB-windows-x64-candidate
+          path: |
+            dist/*.zip
+            dist/*.sha256
+            dist/build-info.json
+            artifacts/packaged-smoke/

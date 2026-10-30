@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "id": "vivliostyle-2.45.2",
+  "version": "2.45.2",
+  "purpose": "本机可重排 EPUB 阅读及原页页眉/页脚/已确认页码显示",
+  "upstream": "https://github.com/vivliostyle/vivliostyle.js",
+  "upstream_commit": "8f31c04f2dd3a3d992016cec21cf69acf221a821",
+  "upstream_npm": "https://registry.npmjs.org/@vivliostyle/viewer/-/viewer-2.45.2.tgz",
+  "viewer_files_modified": false,
+  "licenses": {
+    "viewer_core": "AGPL-3.0",
+    "profile": "MIT",
+    "knockout": "MIT",
+    "i18next_ko": "MIT",
+    "i18next": "MIT",
+    "fast_diff": "Apache-2.0",
+    "fontawesome_font": "OFL-1.1",
+    "fontawesome_icons": "CC-BY-4.0",
+    "fontawesome_code": "MIT"
+  },
+  "source_directory": "../../sources/vivliostyle-2.45.2",
+  "source_manifest_sha256": "a97ee87523dc2b7b2b7f1bb7ef304e85068e57054b09ecc398602c73e9e49b59",
+  "offline": {
+    "account_required": false,
+    "network_required": false,
+    "listen": "127.0.0.1 only",
+    "document_scripts": false,
+    "mathjax_cdn_enabled": false
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3523,
+      "sha256": "d1bd89bea9cbbe6e1fde47a846390da2dd348fa564504c2de9230c81541b5e39"
+    },
+    {
+      "path": "UPSTREAM-README.md",
+      "bytes": 2795,
+      "sha256": "2cfce3e059642978dd6c52688259bd221078500dd231d4fd8b3fa4dfd507a394"
+    },
+    {
+      "path": "UPSTREAM-package.json",
+      "bytes": 2997,
+      "sha256": "6d5cc1ead6479037ac26ed90ae55f589447340dc271c9a042b5acaa6e2a251ed"
+    },
+    {
+      "path": "licenses/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+    },
+    {
+      "path": "licenses/Local-reader-profile-MIT.txt",
+      "bytes": 1084,
+      "sha256": "e87664396dd9c242d3ee7a74f1b6674c98b50d18f97750af8879ecf5de7f6c14"
+    },
+    {
+      "path": "licenses/OFL-1.1.txt",
+      "bytes": 4016,
+      "sha256": "8eea8287e5876b539670cadb82e99f9a7afddec6f6730811be1daf25d2e9bcfd"
+    },
+    {
+      "path": "licenses/Vivliostyle-AGPL-3.0.txt",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    {
+      "path": "licenses/fast-diff-1.3.0-LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "20430d7ea026abdb78e873e59a0817dd7d2921d94acefeafdc3e4e0150a4595d"
+    },
+    {
+      "path": "licenses/fontawesome-free-5.15.4-LICENSE.txt",
+      "bytes": 1548,
+      "sha256": "e779748dfe75e84f974df3c7bc07f842011a100159158b0f1f49b2f2a5a515cb"
+    },
+    {
+      "path": "licenses/i18next-3.5.2-LICENSE.txt",
+      "bytes": 1074,
+      "sha256": "a392b56d5d99eafc1cde7730206bd87250d4732723028aeec9a47d86a2543404"
+    },
+    {
+      "path": "licenses/i18next-ko-3.0.1-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "50ed35d6b4b962dec62f53d1a675d10c8d75c8fbc30b73d012ed8b6b6d973f4c"
+    },
+    {
+      "path": "licenses/knockout-3.5.3-LICENSE.txt",
+      "bytes": 1205,
+      "sha256": "6dd350bd0e9132e2e00a532f5e45b4a64d76880cf08462e0f7cd34ba797c1742"
+    },
+    {
+      "path": "profiles/source-margins.css",
+      "bytes": 829,
+      "sha256": "ca326d9e3b00e19a7c0b8b689415222454e2731fc6a6186f93f7ab09415a2e61"
+    },
+    {
+      "path": "viewer/css/ui.arrows.css",
+      "bytes": 3302,
+      "sha256": "edae31e94469989c01bc37fc574c802b30626afccdcd19f40384761eca4fcf29"
+    },
+    {
+      "path": "viewer/css/ui.loading-overlay.css",
+      "bytes": 1245,
+      "sha256": "5e36c163a08c8cfa515cb00e56f3cad500941ad6c46d9da2c75a8cfdd6716825"
+    },
+    {
+      "path": "viewer/css/ui.menu-bar.css",
+      "bytes": 40713,
+      "sha256": "f23c531c99c7f440285467e18710937d6505fc15e86db3e4ea8dd15909c13de3"
+    },
+    {
+      "path": "viewer/css/ui.message-dialog.css",
+      "bytes": 1817,
+      "sha256": "439b8fb2295af24049e7d71b475a0a1d9ae310031f9fc21ad724cdba035020bc"
+    },
+    {
+      "path": "viewer/css/ui.text-selection-menu.css",
+      "bytes": 4129,
+      "sha256": "a6055f4b5856e78b1f8b4ebfcd844a026c1499fbc2ec2ce5fd4958fe99ec78ee"
+    },
+    {
+      "path": "viewer/css/vivliostyle-viewer.css",
+      "bytes": 1788,
+      "sha256": "dff20f0d868b607bc19f3800a37a0a1d1cde10720910cbd90d3825f3df5e3c7a"
+    },
+    {
+      "path": "viewer/fonts/fa-solid-900.woff2",
+      "bytes": 78268,
+      "sha256": "9834b82ad26e2a37583d22676a12dd2eb0fe7c80356a2114d0db1aa8b3899537"
+    },
+    {
+      "path": "viewer/index.html",
+      "bytes": 43179,
+      "sha256": "36bdec6c3f2ee4d7e137a1336702b85eecadc5631386a5db7f8ad8753bb6bec5"
+    },
+    {
+      "path": "viewer/js/vivliostyle-viewer.js",
+      "bytes": 1002982,
+      "sha256": "4cad949be9d95c70218098d2f0060bfdaa50c32c4ed3ed7674f73c3c0609e13e"
+    },
+    {
+      "path": "viewer/js/vivliostyle-viewer.js.map",
+      "bytes": 4130582,
+      "sha256": "afc97a98271f02b89044722aa2657ed2d558d8e967ee012b463fe1e68c965f33"
+    },
+    {
+      "path": "viewer/resources/mathjax-config.js",
+      "bytes": 1181,
+      "sha256": "33adcf50ad775c562b50e0f2160293603d516af40b657e96fd5ba693fcf0586c"
+    },
+    {
+      "path": "viewer/resources/vivliostyle-icon.png",
+      "bytes": 3048,
+      "sha256": "9192ec44e0869ffeb04a4829604cf5a801726f9cf437a70434f25123a46c99a4"
+    },
+    {
+      "path": "viewer/resources/vivliostyle-logo.svg",
+      "bytes": 15067,
+      "sha256": "e0f608690884644916b77cce2bb29373616a57947477b0e9ad8e225a6abc6f7f"
+    }
+  ]
+}

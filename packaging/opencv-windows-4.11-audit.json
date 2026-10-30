@@ -1,0 +1,29 @@
+{
+  "package": "opencv-python",
+  "version": "4.11.0.86",
+  "platform": "windows-x64",
+  "filename": "opencv_python-4.11.0.86-cp37-abi3-win_amd64.whl",
+  "url": "https://files.pythonhosted.org/packages/a4/7d/f1c30a92854540bf789e9cd5dde7ef49bbe63f855b85a2e6b3db8135c591/opencv_python-4.11.0.86-cp37-abi3-win_amd64.whl",
+  "wheel_sha256": "085ad9b77c18853ea66283e98affefe2de8cc4c1f43eda4c100cf9b2721142ec",
+  "bytes": 39488044,
+  "ffmpeg_libraries": [
+    "cv2/opencv_videoio_ffmpeg4110_64.dll"
+  ],
+  "license_strings": [
+    "LGPL version 2.1 or later",
+    "LGPL version 2.1 or later",
+    "LGPL version 2.1 or later",
+    "LGPL version 2.1 or later",
+    "LGPL version 2.1 or later"
+  ],
+  "configuration": [
+    "--prefix=/build/ffmpeg_x86_64/install",
+    "--prefix=/build/ffmpeg_x86_64/install",
+    "--prefix=/build/libvpx_x64/install",
+    "--prefix=/build/ffmpeg_x86_64/install",
+    "--prefix=/build/ffmpeg_x86_64/install",
+    "--prefix=/build/ffmpeg_x86_64/install"
+  ],
+  "gpl_enabled": false,
+  "x264_libraries": []
+}

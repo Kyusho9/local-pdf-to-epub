@@ -1,0 +1,16 @@
+{
+  "model_package": "rapidocr-onnxruntime==1.4.4",
+  "purpose": "Original license texts accompanying the separately distributable model pack",
+  "sources": [
+    {
+      "file": "PaddleOCR-2.7-LICENSE.txt",
+      "sha256": "ff6311c56c1b22c9209c96cc8afc16da91c24ee55a15e14ebc46fe1960dbd856",
+      "source": "https://raw.githubusercontent.com/PaddlePaddle/PaddleOCR/release/2.7/LICENSE"
+    },
+    {
+      "file": "RapidOCR-1.4.4-LICENSE.txt",
+      "sha256": "3e0af25fdd06aa9586ae97adb00ea927ebe5a3805ac77d2d3a81ce5f55693333",
+      "source": "https://raw.githubusercontent.com/RapidAI/RapidOCR/v1.4.4/LICENSE"
+    }
+  ]
+}

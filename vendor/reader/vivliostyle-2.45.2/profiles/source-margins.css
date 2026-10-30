@@ -1,0 +1,16 @@
+/* Local PDF to EPUB reader profile. Copyright (c) 2026. SPDX-License-Identifier: MIT
+   The running margins use the source at the START of the reflowed reading page.
+   An explicit empty data attribute clears state for unknown sources, cover and reports.
+   This stylesheet is external to the standard EPUB and loaded only by Vivliostyle. */
+[data-srcpage]:not([data-margin-anchor]) {
+  string-set: local-source-page attr(data-srcpage),
+              local-source-head attr(data-srchead),
+              local-source-foot attr(data-srcfoot);
+}
+@page {
+  size: auto;
+  margin: 50px 40px;
+  @top-center { content: string(local-source-head, start); font-size: .8rem; }
+  @bottom-left { content: string(local-source-foot, start); font-size: .8rem; }
+  @bottom-right { content: string(local-source-page, start); font-size: .8rem; }
+}

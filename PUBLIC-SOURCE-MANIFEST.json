@@ -1,0 +1,1393 @@
+{
+  "format_version": 1,
+  "version": "0.1.6",
+  "created_utc": "2026-10-30T04:42:07.663954+00:00",
+  "status": "isolated_tree_verified_not_published",
+  "git_initialized": false,
+  "uploaded": false,
+  "scope": "Explicit source directories only; no artifacts, user documents, caches, environments, or runtime packages",
+  "file_count": 274,
+  "bytes": 24951039,
+  "files": [
+    {
+      "path": ".github/workflows/build-windows.yml",
+      "bytes": 1630,
+      "sha256": "c4399652c2f523bb00fc2e54e51f9e5a93e492249673d03220ee670d2f21155d"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 638,
+      "sha256": "33571a6a6349016a204a8c010e4ac0009222c508773d3336f52d1f7b3c236712"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1084,
+      "sha256": "e87664396dd9c242d3ee7a74f1b6674c98b50d18f97750af8879ecf5de7f6c14"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11933,
+      "sha256": "48569ab4fd91c1d95bc239da8c15ca43d3d3c8cbe42877107582cea63d7a28c9"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 5660,
+      "sha256": "c189488a6a44abf5b24f47d4895dc8c33de320fe0bcf8eb60a5ccac44883cdef"
+    },
+    {
+      "path": "docs/BACKEND.md",
+      "bytes": 5110,
+      "sha256": "82d3f59339132eb58c1ce408644a58d170b3a84986d531eccf8c5fe20066b2f2"
+    },
+    {
+      "path": "docs/CONTRACT.md",
+      "bytes": 4021,
+      "sha256": "491ce668b9e073b45c04ee20c124f0bdfdfe6bb66a40908290e71e2b5565a114"
+    },
+    {
+      "path": "docs/GPU_RUNTIME.md",
+      "bytes": 9203,
+      "sha256": "49fe5d9886faef00fd88d4b760254b55722acfed314b86cf4a30b3adcafa1763"
+    },
+    {
+      "path": "docs/OFFLINE_RESOURCES.md",
+      "bytes": 4727,
+      "sha256": "2e9f403941dc03d6c1d7fb869bd99cf9adf4f93fdf820473541ea108a6792de2"
+    },
+    {
+      "path": "docs/PLATFORMS.md",
+      "bytes": 6305,
+      "sha256": "d2275861deb7cd1ae26984bc3fb023d0b34c48c8ca8ade17160e4da3e0fcb20f"
+    },
+    {
+      "path": "docs/RELEASE_0.1.1.md",
+      "bytes": 4062,
+      "sha256": "212cacc5f445a6e28a663814d56ee4ba4d5355b000591956fa52b636243d261b"
+    },
+    {
+      "path": "docs/RELEASE_0.1.2.md",
+      "bytes": 7398,
+      "sha256": "630f6587a21826b498008c5158a30299163f8138c5f7edbe99066764fd6894d7"
+    },
+    {
+      "path": "docs/RELEASE_0.1.3.md",
+      "bytes": 17089,
+      "sha256": "9b1c78dbc973533aa617bf7462835c416ca4e71900cc9f89b5ea4f8236c640d8"
+    },
+    {
+      "path": "docs/RELEASE_0.1.4.md",
+      "bytes": 8877,
+      "sha256": "e92d0b43fd5ce5c1031e508d6a9e1a8ff1820ad06b0d4ff7b3c35fd1312662d7"
+    },
+    {
+      "path": "docs/RELEASE_0.1.5.md",
+      "bytes": 8406,
+      "sha256": "d818e862c842d7238fdeffd284b07a9a74fb79998f7a755a795cec0ccb22b7cc"
+    },
+    {
+      "path": "docs/RELEASE_0.1.6.md",
+      "bytes": 4911,
+      "sha256": "1065883472a6952680b36f766977f8d39bb015f6909b7c95321ee20844e2f09d"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "bytes": 3459,
+      "sha256": "0f58a40ab6910381a4399b594dae0bee4bd9b44a40c35b330e4218aa121b3829"
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "bytes": 10511,
+      "sha256": "ecfbaa5128611dd5a4f519635dbfd4e13d55ec678359192aedf87be43e1c7208"
+    },
+    {
+      "path": "docs/THIRD_PARTY.md",
+      "bytes": 13115,
+      "sha256": "12fe205bc9b66a7c68f10f46360e5227497f05ed80b0b6e2f5b75ff4530a2c51"
+    },
+    {
+      "path": "docs/WINDOWS_TEST_REPORT.md",
+      "bytes": 4337,
+      "sha256": "3a2d57cdc827537a0f5954132b30143d373960d2cdaa86332255d93b8cc69d01"
+    },
+    {
+      "path": "packaging/OPENCV_MINIMAL.md",
+      "bytes": 3648,
+      "sha256": "3f85f27857da170879fbadce6b9c96e92ef250cc4f18602bfd9e54e8f5f42e85"
+    },
+    {
+      "path": "packaging/audit-archives/Qt-6.8.3/GPL-3.0-only.txt",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "packaging/audit-archives/Qt-6.8.3/LGPL-3.0-only.txt",
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    {
+      "path": "packaging/audit-archives/Qt-6.8.3/Qt-GPL-exception-1.0.txt",
+      "bytes": 965,
+      "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2"
+    },
+    {
+      "path": "packaging/audit-archives/Qt-6.8.3/sources.json",
+      "bytes": 633,
+      "sha256": "b05c22e20b323d43a756c2dbc7890a9a33d0fe824e8d42a68bbd031fb1a4b156"
+    },
+    {
+      "path": "packaging/audit_opencv_wheel.py",
+      "bytes": 3296,
+      "sha256": "365e4c3b4298078e89f695f9dc4c4ceed6b00e21a65f4e003d0ca47a02f1fc32"
+    },
+    {
+      "path": "packaging/build_minimal_opencv.py",
+      "bytes": 7616,
+      "sha256": "41bee1897a8ed665839ca2251a933e22f9bbcd8186a1a7bbb7047d073e2bb510"
+    },
+    {
+      "path": "packaging/collect_licenses.py",
+      "bytes": 3649,
+      "sha256": "64e94ae6ff2de4e666ca0762552f632165f4fd5ba716f4676a76d3f4c92a4652"
+    },
+    {
+      "path": "packaging/entry.py",
+      "bytes": 288,
+      "sha256": "a6db1482dd96966225161534a0ba00e30ed17a34240252194ff1384ec81b4e70"
+    },
+    {
+      "path": "packaging/licenses/FlatBuffers-25.12.19/LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "packaging/licenses/FlatBuffers-25.12.19/sources.json",
+      "bytes": 196,
+      "sha256": "b929ed9825dc895817f89df54063ca8c5e43f9ec74406506ee55452629f59a03"
+    },
+    {
+      "path": "packaging/licenses/PyYAML-6.0.3/pyyaml-6.0.3.dist-info/licenses/LICENSE",
+      "bytes": 1101,
+      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+    },
+    {
+      "path": "packaging/licenses/Python-LICENSE.txt",
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "packaging/licenses/Qt-6.12.0/GPL-3.0-only.txt",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "packaging/licenses/Qt-6.12.0/LGPL-3.0-only.txt",
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    {
+      "path": "packaging/licenses/Qt-6.12.0/Qt-GPL-exception-1.0.txt",
+      "bytes": 965,
+      "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2"
+    },
+    {
+      "path": "packaging/licenses/Qt-6.12.0/sources.json",
+      "bytes": 636,
+      "sha256": "edc0da26be4442f6ee2db6e8545b54947cf4d76ae9e54685d303bc8376eef83b"
+    },
+    {
+      "path": "packaging/licenses/altgraph-0.17.5/altgraph-0.17.5.dist-info/LICENSE",
+      "bytes": 1002,
+      "sha256": "6c194d6db0c64d45535d10c95142b9b0cda7b7dcc7f1ddee302b3d536f3dbe46"
+    },
+    {
+      "path": "packaging/licenses/cffi-2.1.1/cffi-2.1.1.dist-info/licenses/LICENSE",
+      "bytes": 1123,
+      "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+    },
+    {
+      "path": "packaging/licenses/chardet-7.7.0/chardet-7.7.0.dist-info/licenses/LICENSE",
+      "bytes": 641,
+      "sha256": "0d4cf67e7a26e9957b8948e7dfc0e380e61b427a94b061e618889aba89bb9616"
+    },
+    {
+      "path": "packaging/licenses/charset-normalizer-3.5.2/charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+      "bytes": 1071,
+      "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+    },
+    {
+      "path": "packaging/licenses/coloredlogs-15.0.1/coloredlogs-15.0.1.dist-info/LICENSE.txt",
+      "bytes": 1056,
+      "sha256": "0bef4ffb1855b65570304f2018c6d44e4bab97bd5df8716ecd7800014d717267"
+    },
+    {
+      "path": "packaging/licenses/cryptography-50.0.2/cryptography-50.0.2.dist-info/licenses/LICENSE",
+      "bytes": 197,
+      "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+    },
+    {
+      "path": "packaging/licenses/cryptography-50.0.2/cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+      "bytes": 11360,
+      "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+    },
+    {
+      "path": "packaging/licenses/cryptography-50.0.2/cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
+      "bytes": 1532,
+      "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+    },
+    {
+      "path": "packaging/licenses/humanfriendly-10.0/humanfriendly-10.0.dist-info/LICENSE.txt",
+      "bytes": 1056,
+      "sha256": "4ac48f4117809f2734066150450f120b3bb110ac1d3b32170795e0560dbbc1f5"
+    },
+    {
+      "path": "packaging/licenses/iniconfig-2.3.1/iniconfig-2.3.1.dist-info/licenses/LICENSE",
+      "bytes": 1098,
+      "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+    },
+    {
+      "path": "packaging/licenses/inventory.json",
+      "bytes": 88359,
+      "sha256": "8d68855bbf8c5f3f1755a997d6e22dc753942a548bc00dd19713f282cbfda9d8"
+    },
+    {
+      "path": "packaging/licenses/macholib-1.16.4/macholib-1.16.4.dist-info/LICENSE",
+      "bytes": 1113,
+      "sha256": "47082ab2bc0184123ec9f10fdf80c70723ee68f07d44382e17615c2a6ba70b09"
+    },
+    {
+      "path": "packaging/licenses/model-origins/PaddleOCR-2.7-LICENSE.txt",
+      "bytes": 11438,
+      "sha256": "ff6311c56c1b22c9209c96cc8afc16da91c24ee55a15e14ebc46fe1960dbd856"
+    },
+    {
+      "path": "packaging/licenses/model-origins/RapidOCR-1.4.4-LICENSE.txt",
+      "bytes": 11422,
+      "sha256": "3e0af25fdd06aa9586ae97adb00ea927ebe5a3805ac77d2d3a81ce5f55693333"
+    },
+    {
+      "path": "packaging/licenses/model-origins/sources.json",
+      "bytes": 624,
+      "sha256": "fc8a63fb4649eec73011a6123724eb6c8906467927eda01387263883b2b61227"
+    },
+    {
+      "path": "packaging/licenses/mpmath-1.3.0/mpmath-1.3.0.dist-info/LICENSE",
+      "bytes": 1537,
+      "sha256": "c26cae81da4508e5e249985777a33821f183223ebb74d7f8cfbf90fe7eef2fb7"
+    },
+    {
+      "path": "packaging/licenses/numpy-1.26.4/numpy-1.26.4.dist-info/LICENSE.txt",
+      "bytes": 47752,
+      "sha256": "080b68e8f70ebc82c180b7396936172d4331f1a18b17f496b9a9256131712cd8"
+    },
+    {
+      "path": "packaging/licenses/numpy-1.26.4/numpy/core/include/numpy/random/LICENSE.txt",
+      "bytes": 1018,
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+    },
+    {
+      "path": "packaging/licenses/numpy-1.26.4/numpy/ma/LICENSE",
+      "bytes": 1593,
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+    },
+    {
+      "path": "packaging/licenses/numpy-1.26.4/numpy/random/LICENSE.md",
+      "bytes": 3511,
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    {
+      "path": "packaging/licenses/onnxruntime-1.20.1/onnxruntime/LICENSE",
+      "bytes": 1073,
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    {
+      "path": "packaging/licenses/onnxruntime-1.20.1/onnxruntime/ThirdPartyNotices.txt",
+      "bytes": 338538,
+      "sha256": "cf7342f7ba482ef715ae58f5f497a8d3564fa255164175aea324cd293c5701a0"
+    },
+    {
+      "path": "packaging/licenses/opencv-python-4.11.0.86/cv2/LICENSE-3RD-PARTY.txt",
+      "bytes": 152360,
+      "sha256": "4fc3c113d53e95da0f3c433655a67067b7310e53af31eb6d280e94cc6927a363"
+    },
+    {
+      "path": "packaging/licenses/opencv-python-4.11.0.86/cv2/LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "09d719058e782ac7bc71ba21c944e1136cde2bb957c0e888121f0218d6b5f02c"
+    },
+    {
+      "path": "packaging/licenses/opencv-python-4.11.0.86/cv2/LOCAL_LICENSES.txt",
+      "bytes": 64559,
+      "sha256": "902c1589a4025606becb0be42284c031a4c572527837cf93c01b61d96c32822e"
+    },
+    {
+      "path": "packaging/licenses/opencv-python-4.11.0.86/cv2/data/haarcascade_license_plate_rus_16stages.xml",
+      "bytes": 47775,
+      "sha256": "4d1c44bf7a1bc4e204fa25b046ed0acffd7f713cc13fe2958b6977125c60ddea"
+    },
+    {
+      "path": "packaging/licenses/opencv-python-4.11.0.86/opencv_python-4.11.0.86.dist-info/LICENSE-3RD-PARTY.txt",
+      "bytes": 152360,
+      "sha256": "4fc3c113d53e95da0f3c433655a67067b7310e53af31eb6d280e94cc6927a363"
+    },
+    {
+      "path": "packaging/licenses/opencv-python-4.11.0.86/opencv_python-4.11.0.86.dist-info/LICENSE.txt",
+      "bytes": 1070,
+      "sha256": "09d719058e782ac7bc71ba21c944e1136cde2bb957c0e888121f0218d6b5f02c"
+    },
+    {
+      "path": "packaging/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE",
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "packaging/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "packaging/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "packaging/licenses/pdfminer.six-20250327/pdfminer_six-20250327.dist-info/licenses/LICENSE",
+      "bytes": 1093,
+      "sha256": "f01e5d699a33766b5caf4a5099f2856aba4f3f75ea1df05dc0572b34b4bea8f2"
+    },
+    {
+      "path": "packaging/licenses/pdfplumber-0.11.6/pdfplumber-0.11.6.dist-info/licenses/LICENSE.txt",
+      "bytes": 1086,
+      "sha256": "0d48994da4d1321e395b5e64a724ed4dec63fb96b88ac5b88fc014771e690821"
+    },
+    {
+      "path": "packaging/licenses/pillow-11.1.0/pillow-11.1.0.dist-info/LICENSE",
+      "bytes": 60071,
+      "sha256": "f576d3937d21161eac59b0b6f7807a2f5f30fe77d72abfe0d5b4d8e939b31288"
+    },
+    {
+      "path": "packaging/licenses/pluggy-1.7.0/pluggy-1.7.0.dist-info/licenses/LICENSE",
+      "bytes": 1110,
+      "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+    },
+    {
+      "path": "packaging/licenses/protobuf-7.36.2/protobuf-7.36.2.dist-info/LICENSE",
+      "bytes": 1732,
+      "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+    },
+    {
+      "path": "packaging/licenses/pyclipper-1.4.0/pyclipper-1.4.0.dist-info/licenses/LICENSE",
+      "bytes": 1110,
+      "sha256": "32ee7398e3123736fd14e9f08287edc2d97ace102ab54d8dc4edc8d31c651fa8"
+    },
+    {
+      "path": "packaging/licenses/pycparser-3.12/pycparser-3.12.dist-info/licenses/LICENSE",
+      "bytes": 1543,
+      "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90"
+    },
+    {
+      "path": "packaging/licenses/pyinstaller-6.12.0/pyinstaller-6.12.0.dist-info/COPYING.txt",
+      "bytes": 32138,
+      "sha256": "dcf75fdb959db1e3b41c0f8505069d2ece781b5ec6b3d0a4d30975cfc6580245"
+    },
+    {
+      "path": "packaging/licenses/pyinstaller-hooks-contrib-2026.9/pyinstaller_hooks_contrib-2026.9.dist-info/licenses/LICENSE",
+      "bytes": 27666,
+      "sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0"
+    },
+    {
+      "path": "packaging/licenses/pypdf-5.4.0/pypdf-5.4.0.dist-info/licenses/LICENSE",
+      "bytes": 1605,
+      "sha256": "a97ac230e5f33ef10a5367a850eb01f91f1a0b064e34742c7794d2294557f524"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/LICENSES/Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/LICENSES/BSD-3-Clause.txt",
+      "bytes": 1459,
+      "sha256": "a6d11f0694c0137e9b02924b9d33a159f6c72f220fa4655bb2e1ea3654377d39"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/LICENSES/CC-BY-4.0.txt",
+      "bytes": 14527,
+      "sha256": "419896aea50c15d6e40c5b4baf4bd346f78223b9a354c7357ad00262afdc08ec"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/abseil.txt",
+      "bytes": 11361,
+      "sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/agg23.txt",
+      "bytes": 725,
+      "sha256": "c110d3ea2ad77467ce0dcff7d3337e6c8be8049a5103f4b9bd5fd911a77972e5"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/fast_float.txt",
+      "bytes": 1079,
+      "sha256": "e562f3f974ced7e69dd1db77b820b36bcf8f30377f1aa105723fba449c53c4e6"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/freetype.txt",
+      "bytes": 6741,
+      "sha256": "f4b133e25df1f86ad3ffea453aa0e613f0474f34778dbbb3e437e7b2724937d8"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/icu.txt",
+      "bytes": 27718,
+      "sha256": "e55522d81edc687a341a4411e0776e54ca654e90147f354a90458aaced4116af"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/lcms.txt",
+      "bytes": 1353,
+      "sha256": "7312b68c5b25e9bf2b828706fb4e29588f22705112f411fd42e1f7d84c3d139a"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libjpeg_turbo.ijg",
+      "bytes": 12799,
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libjpeg_turbo.md",
+      "bytes": 5620,
+      "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libopenjpeg.txt",
+      "bytes": 1794,
+      "sha256": "c5ab0890a737c2dfa7ba675036554f6d17741d98629b0c2a145354d00617e6b2"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/libpng.txt",
+      "bytes": 5345,
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/llvm-libc.txt",
+      "bytes": 15140,
+      "sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/pdfium-binaries.txt",
+      "bytes": 1177,
+      "sha256": "ba26c1263131696b86c10496b5066b918a20b7161822a80c274d0080105f6c93"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/pdfium.txt",
+      "bytes": 12896,
+      "sha256": "1fe9dea718fbd75cf149adaf4d8a22a4335604d964ddb76d1b45383dec8668c9"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/simdutf.txt",
+      "bytes": 1059,
+      "sha256": "fc8dbc04e03ad4efc08a647ffe7f995b811a95bc04c0e85a56d5277c6593fa5f"
+    },
+    {
+      "path": "packaging/licenses/pypdfium2-5.14.0/pypdfium2-5.14.0.dist-info/licenses/data/darwin_arm64/BUILD_LICENSES/zlib.txt",
+      "bytes": 1332,
+      "sha256": "33fd641c9f3b0e0be64bc78fea9e94807674cdd70c48477599226cb8956565fe"
+    },
+    {
+      "path": "packaging/licenses/pytest-8.3.5/pytest-8.3.5.dist-info/LICENSE",
+      "bytes": 1091,
+      "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+    },
+    {
+      "path": "packaging/licenses/reportlab-4.3.1/reportlab-4.3.1.dist-info/LICENSE",
+      "bytes": 1707,
+      "sha256": "ef831761646313921375fc2cb888e8eeaf7da213d0b92852c10c42f3a0b4d138"
+    },
+    {
+      "path": "packaging/licenses/reportlab-4.3.1/reportlab/fonts/DarkGarden-copying-gpl.txt",
+      "bytes": 17976,
+      "sha256": "1b2a567f289f66a143c56353e7b3d4fa5862514a5e3c5cfdf8b02ee5e5aaa953"
+    },
+    {
+      "path": "packaging/licenses/reportlab-4.3.1/reportlab/fonts/DarkGarden-copying.txt",
+      "bytes": 1318,
+      "sha256": "3cd1020510efa7f6b3166a5a2740f92bd664a695ea179e0bda442e74cd0ef3a4"
+    },
+    {
+      "path": "packaging/licenses/reportlab-4.3.1/reportlab/fonts/bitstream-vera-license.txt",
+      "bytes": 5954,
+      "sha256": "3361d054759a2fc686a2c058be82deaf9c2e6fe549be9004d7935a6c1736315d"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools-84.2.1.dist-info/licenses/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+      "bytes": 7634,
+      "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+      "bytes": 10278,
+      "sha256": "458502e12d97bbf64438606a20044aa85eb05fb0a8a807bb35dbec253fd1fc04"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+      "bytes": 1076,
+      "sha256": "9755a18519666e5f0f4cae3daad3d7012bcae48a600b31237d75e9fe134e6683"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+      "bytes": 1076,
+      "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+      "bytes": 1053,
+      "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE",
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+      "bytes": 1107,
+      "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+      "bytes": 1076,
+      "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/config/NOTICE",
+      "bytes": 493,
+      "sha256": "2dddf08818297a3b89d43d95ff659d8da85741108c9136dfa3a4d856c0623bd8"
+    },
+    {
+      "path": "packaging/licenses/setuptools-84.2.1/setuptools/config/_validate_pyproject/NOTICE",
+      "bytes": 18737,
+      "sha256": "09c9bcea95ca086f8bc5bed174e40bc835b297d40fb5f86bbbb570fe0a5581a7"
+    },
+    {
+      "path": "packaging/licenses/shapely-2.2.0/shapely-2.2.0.dist-info/licenses/LICENSE.txt",
+      "bytes": 1583,
+      "sha256": "4a207eac9bf257ed286e1c6f0fce253d1abfdb134fc61ec855e37f5692a3f754"
+    },
+    {
+      "path": "packaging/licenses/shapely-2.2.0/shapely-2.2.0.dist-info/licenses/LICENSE_GEOS",
+      "bytes": 26787,
+      "sha256": "81d9aaf9ab7e3e6184568a70f27ee3e138d8d1e543b46dad5af88cff61cf1b36"
+    },
+    {
+      "path": "packaging/licenses/six-1.17.0/six-1.17.0.dist-info/LICENSE",
+      "bytes": 1066,
+      "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+    },
+    {
+      "path": "packaging/licenses/sympy-1.14.0/sympy-1.14.0.dist-info/licenses/AUTHORS",
+      "bytes": 55779,
+      "sha256": "82b1038521b0696c63c90b31ed4a0a2c9c4c16871c648b157b07ca44b6f18f8d"
+    },
+    {
+      "path": "packaging/licenses/sympy-1.14.0/sympy-1.14.0.dist-info/licenses/LICENSE",
+      "bytes": 7885,
+      "sha256": "07a5e9819f727b4986ad2829c7a29a6320d42575f720eb24d71b7fef573a0286"
+    },
+    {
+      "path": "packaging/licenses/sympy-1.14.0/sympy/parsing/latex/LICENSE.txt",
+      "bytes": 1075,
+      "sha256": "007bc30a58fa40a996e772047120de4eaf31f5110e4f9c3b5f93fcdfbe2eaca1"
+    },
+    {
+      "path": "packaging/licenses/tqdm-4.70.1/tqdm-4.70.1.dist-info/licenses/LICENCE",
+      "bytes": 1985,
+      "sha256": "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de"
+    },
+    {
+      "path": "packaging/local_epub.spec",
+      "bytes": 3742,
+      "sha256": "f4dc9efd65ae46b061cdc9da391c2fac0f809f49bd07a24c82caf6f65acaa14b"
+    },
+    {
+      "path": "packaging/opencv-build-requirements.txt",
+      "bytes": 201,
+      "sha256": "28c9e3ad8fdb426fab55ed317b1059d33368e987a325f801f97116c40ae02bf7"
+    },
+    {
+      "path": "packaging/opencv-headless-4.11-audit.json",
+      "bytes": 1728,
+      "sha256": "ea12a0348e91ad42c73ceed0c14021732dd8bd1dc08056b5cfa1bb55655b01a0"
+    },
+    {
+      "path": "packaging/opencv-local.patch",
+      "bytes": 869,
+      "sha256": "4d2a9675665a148f9341b876869df78738c8194c7e52987e31e2a0b4bf9a8155"
+    },
+    {
+      "path": "packaging/opencv-minimal-build.json",
+      "bytes": 2276,
+      "sha256": "21d505506b0ff099b482c462e27f0a70ba43a47dea364f4ff8e49c5b0f5cb372"
+    },
+    {
+      "path": "packaging/opencv-source.json",
+      "bytes": 590,
+      "sha256": "0ef3d872bec7149796dad801ac62aa10b7befedcce1cf3b74b1d1713aa981435"
+    },
+    {
+      "path": "packaging/opencv-wheel-audit.json",
+      "bytes": 3022,
+      "sha256": "a0d38897c41b7daf5008d8274425194eb757ef8e2848523655205ec459195b88"
+    },
+    {
+      "path": "packaging/opencv-windows-4.11-audit.json",
+      "bytes": 1031,
+      "sha256": "c20da812605b1b9f8f6cdf3dfb1e2efbe5be02398a7935f779a6fddcca504e3d"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 876,
+      "sha256": "55b236517c5f93cae42e66de69fc9cc283a20752cdf3e9ecb874a5547cac2a62"
+    },
+    {
+      "path": "requirements.lock",
+      "bytes": 1270,
+      "sha256": "90ff62d67d2e52832a2a1b17b9372d75218e3211d4105599d2ca887bbc9b86eb"
+    },
+    {
+      "path": "scripts/build-acceptance.py",
+      "bytes": 4149,
+      "sha256": "bd68502a038e74b5382b75fe991d6124fec4fab7f9450a05aecf63dfb2a1f409"
+    },
+    {
+      "path": "scripts/build-gpu-runtime.py",
+      "bytes": 5071,
+      "sha256": "3a3292a464f1ece84e873a9303a5d2f6d64f056f32ef328f88d7c667a15a11d2"
+    },
+    {
+      "path": "scripts/build-macos-acceptance.py",
+      "bytes": 19610,
+      "sha256": "0b7541e86be2e61e9686c55b06923c2320b732d4e52040b6525cdf878bfa29a0"
+    },
+    {
+      "path": "scripts/build-macos.sh",
+      "bytes": 110,
+      "sha256": "002361451842027458110033cb3a8643d95a0f535fd274bd405ea3b90a28fe36"
+    },
+    {
+      "path": "scripts/build-smoke.py",
+      "bytes": 3365,
+      "sha256": "8d27b6dd17e407b84d8c53a8e092a6339b535451a297750a8563935d8c44b9cb"
+    },
+    {
+      "path": "scripts/build-windows.ps1",
+      "bytes": 223,
+      "sha256": "7c3a8fc410d0faac93f69063d7c26647cfa8380ebdd3d4711760f2514cf14e9a"
+    },
+    {
+      "path": "scripts/build.py",
+      "bytes": 5779,
+      "sha256": "6b48e8d10aa64fff5412350b2757fd5b7fbe0a27d35e5cf38c405521c1ad866e"
+    },
+    {
+      "path": "scripts/deny-network.sb",
+      "bytes": 44,
+      "sha256": "5c358b8d847211333e7ba22df82d84f796b5f30a41a2682209a949d783adbd08"
+    },
+    {
+      "path": "scripts/gpu-dxgi-adapters.py",
+      "bytes": 2538,
+      "sha256": "d0dff51e305f52da7e6020b3d5a66d7527f9705f78c1dbd7bbd067c9406a7c01"
+    },
+    {
+      "path": "scripts/gpu-generate-catalog.py",
+      "bytes": 7584,
+      "sha256": "63b6b4ebbb774e6fad84c1a9c8240e86229e4524b1b6ed37c2e8ce1d6f671ff2"
+    },
+    {
+      "path": "scripts/gpu-inference-probe.py",
+      "bytes": 9839,
+      "sha256": "af4675d395e2267afb337ef450b5d62372edbfbc0f73cda23705ef2487643c82"
+    },
+    {
+      "path": "scripts/gpu-prepare-directml-probe.py",
+      "bytes": 4604,
+      "sha256": "2398016302833b2a14cc7d0c5be024cac3698d5c0bbfb67a9a67b7da89341f82"
+    },
+    {
+      "path": "scripts/gpu-prepare-probe.py",
+      "bytes": 5512,
+      "sha256": "127d1f1d57d7c16890d02d870fa92cc88043e865cf5be23a4f4098d541923b60"
+    },
+    {
+      "path": "scripts/gui_smoke.py",
+      "bytes": 502,
+      "sha256": "9b3bbf39a3696fadf42f06d8d60b045454bd4a14d50a9be5090ea3e8fea123c6"
+    },
+    {
+      "path": "scripts/make_fixtures.py",
+      "bytes": 11554,
+      "sha256": "1900564b007d581b3da8cb0f0f6352466b0680697bd41ddad749d52a46f49198"
+    },
+    {
+      "path": "scripts/make_page_number_fixture.py",
+      "bytes": 1690,
+      "sha256": "9d2448f71a9f4ecc94fbcdfd757c323f85db9b53ba59be7bccd7effe848dedfd"
+    },
+    {
+      "path": "scripts/native-package-offline.py",
+      "bytes": 3600,
+      "sha256": "519eebf518ced16bb17d47c0cdb81734bbbd9a18094e5cbd16a0093d9b955454"
+    },
+    {
+      "path": "scripts/offline_acceptance.py",
+      "bytes": 3579,
+      "sha256": "f1562dca3eafde770615edd984615dfb0d598609d18f014457d10cdb858af911"
+    },
+    {
+      "path": "scripts/package-source.py",
+      "bytes": 35859,
+      "sha256": "db1cb61d29e34b245ab866cdf50731b2406ecb97a273803476c12a9c896c6715"
+    },
+    {
+      "path": "scripts/prepare-public-source.py",
+      "bytes": 4066,
+      "sha256": "4087e56e36ce536aee1b5478a85dfb06e4873310e3d4f643cae0b7665bec0c29"
+    },
+    {
+      "path": "scripts/review-onnx-acceptance.py",
+      "bytes": 8481,
+      "sha256": "7d4e78d9c96ca039fe163f39188830b0104b7c6abaa8698790bbf8c3bd5263c4"
+    },
+    {
+      "path": "scripts/windows-environment.ps1",
+      "bytes": 1263,
+      "sha256": "a6ffc8db0896c9d402882e499ca23bfb15329b07ef644648ae02f6e331e4a130"
+    },
+    {
+      "path": "scripts/windows-gpu-gui-acceptance.ps1",
+      "bytes": 25251,
+      "sha256": "936acc918b2ca87f16f9b0bcc49f341e498f2a7e8ac9e0abd1cd7266c665c94f"
+    },
+    {
+      "path": "scripts/windows-gpu-offline-probe.ps1",
+      "bytes": 4905,
+      "sha256": "6c8b193231b359d0acf2e0d82c60f1dbec1e61c59585f809be21d4d9d042ce96"
+    },
+    {
+      "path": "scripts/windows-gui-acceptance.ps1",
+      "bytes": 20238,
+      "sha256": "a38534e660accf58be48985a8b4afd1883e9d0aa3828253dc2d7856f87e73791"
+    },
+    {
+      "path": "scripts/windows-offline-acceptance.ps1",
+      "bytes": 18489,
+      "sha256": "ecac9898c690345f3a8fb699b486e5b68e2e465f328cbdcf315a15502a6679c5"
+    },
+    {
+      "path": "scripts/windows-onnx-acceptance.py",
+      "bytes": 25064,
+      "sha256": "40b95679d64dd42738ab0e0eba6d23f4d9c1aa948f2f4f75906d7843428b1f84"
+    },
+    {
+      "path": "scripts/windows-remote.py",
+      "bytes": 1480,
+      "sha256": "39cca26c3bde508ad9d31f4a4379d39ba402a4687a46f24a6fd29a97887a62c6"
+    },
+    {
+      "path": "src/local_epub/__init__.py",
+      "bytes": 82,
+      "sha256": "81d894ada9c3f52bf12167af727023f009b3552f5ab7dce032e989e27ae8ed77"
+    },
+    {
+      "path": "src/local_epub/__main__.py",
+      "bytes": 442,
+      "sha256": "2ee21b307267be456282b954a2205e0ae61c85859f936056116d6ef65306bb36"
+    },
+    {
+      "path": "src/local_epub/backend.py",
+      "bytes": 33201,
+      "sha256": "0e0badaab9963d7d6cd49e7bd0d5e3274253d037a6a710f935a97dbf540b7799"
+    },
+    {
+      "path": "src/local_epub/cli.py",
+      "bytes": 11220,
+      "sha256": "da7059e367456a2b092dda3b05e48d1ce581cbc6259f27892eb7503277230b52"
+    },
+    {
+      "path": "src/local_epub/cross_page_paragraphs.py",
+      "bytes": 8723,
+      "sha256": "270e634468aa3ebc546dcb3b18265f7af8d0763dbf7dd0a31c62b86c99fc1d3b"
+    },
+    {
+      "path": "src/local_epub/directml_runtime_catalog.json",
+      "bytes": 366395,
+      "sha256": "6e6be7626c9d7ed9338dfef9cdd46babae10e0ca23add1a3a76ad29495951c26"
+    },
+    {
+      "path": "src/local_epub/directml_runtime_manifest.json",
+      "bytes": 477268,
+      "sha256": "8f48959d796eefe672c547212d78403e77447886994f6abaded9ec86b966935a"
+    },
+    {
+      "path": "src/local_epub/epub.py",
+      "bytes": 31221,
+      "sha256": "b07cfe82aa43549230f33f9f68d967b8aead5709a76ffb0626d8f8962481ff78"
+    },
+    {
+      "path": "src/local_epub/gpu_execution.py",
+      "bytes": 15600,
+      "sha256": "01bff40366e57dac107154aa0d8d95e6f4cc18be7c56f49a7e2c73d77da58239"
+    },
+    {
+      "path": "src/local_epub/gpu_resources.py",
+      "bytes": 16389,
+      "sha256": "3f8a01f7ebe4218a2226164ab0c01796ba4b0af70778cc56f23b3dbe01f4273a"
+    },
+    {
+      "path": "src/local_epub/gpu_runtime_catalog.json",
+      "bytes": 534767,
+      "sha256": "33284ee50ad949ad768de949c326722d5552a4d30321cf86e709078931b2fe66"
+    },
+    {
+      "path": "src/local_epub/gpu_runtime_manifest.json",
+      "bytes": 469255,
+      "sha256": "df0fad74a8d6c3691c77d4ed6f562c394956512247fd608df372ca339ef0181d"
+    },
+    {
+      "path": "src/local_epub/gpu_worker.py",
+      "bytes": 19923,
+      "sha256": "cae25ad4deb3cc4e5c081da45ffd1ecad1614f130a4af7a97a06a1d074d7bbd9"
+    },
+    {
+      "path": "src/local_epub/gui.py",
+      "bytes": 106334,
+      "sha256": "928028e7e806231a9adcdfc388c9301772f07a80931bcf2433be88ad981e25e8"
+    },
+    {
+      "path": "src/local_epub/gui_acceptance.py",
+      "bytes": 48862,
+      "sha256": "3e38df771448d97c07909cff7b3500fdca5ff350824ebec1167d453cc76c09e2"
+    },
+    {
+      "path": "src/local_epub/inline_graphics.py",
+      "bytes": 4398,
+      "sha256": "2a31648b65f2e16a115a5c13d20d87fcbf7de4739eb374dad6e22a44c86d333b"
+    },
+    {
+      "path": "src/local_epub/layout_edits.py",
+      "bytes": 3788,
+      "sha256": "61e9850e49b541349e91edf53ced1c3f491889839600265ba407424a2cbae105"
+    },
+    {
+      "path": "src/local_epub/margins.py",
+      "bytes": 20295,
+      "sha256": "9083d79115ad703814cf095bfdeca4f1696bc9576335c0b3ac3af60744355ae9"
+    },
+    {
+      "path": "src/local_epub/model_licenses/PaddleOCR-2.7-LICENSE.txt",
+      "bytes": 11438,
+      "sha256": "ff6311c56c1b22c9209c96cc8afc16da91c24ee55a15e14ebc46fe1960dbd856"
+    },
+    {
+      "path": "src/local_epub/model_licenses/RapidOCR-1.4.4-LICENSE.txt",
+      "bytes": 11422,
+      "sha256": "3e0af25fdd06aa9586ae97adb00ea927ebe5a3805ac77d2d3a81ce5f55693333"
+    },
+    {
+      "path": "src/local_epub/model_licenses/sources.json",
+      "bytes": 624,
+      "sha256": "fc8a63fb4649eec73011a6123724eb6c8906467927eda01387263883b2b61227"
+    },
+    {
+      "path": "src/local_epub/offline.py",
+      "bytes": 792,
+      "sha256": "25db0a657e313510e4ad8f2b6b5a683a9680dcc545b9c41d578e0d1536770272"
+    },
+    {
+      "path": "src/local_epub/page_info.py",
+      "bytes": 7058,
+      "sha256": "773ebb32853d81bfe93d71c6cb422263ffa14bbcb538bbf515315d8dd7954911"
+    },
+    {
+      "path": "src/local_epub/page_margins.py",
+      "bytes": 9572,
+      "sha256": "eed8cb922ba4d50993037ec6c21e553d0ddecb2087a97ba5ef1e4068b6186d74"
+    },
+    {
+      "path": "src/local_epub/page_number_repairs.py",
+      "bytes": 14713,
+      "sha256": "388c08b55753de725120b161b4926d8cc9fe9df35644f9c542f19acd5b353e0b"
+    },
+    {
+      "path": "src/local_epub/paragraphs.py",
+      "bytes": 16998,
+      "sha256": "bc71958f464256630d2ae67bc8d69ed0ab120f7c6b3ed35bda70aac07ecbdeca"
+    },
+    {
+      "path": "src/local_epub/pipeline.py",
+      "bytes": 40645,
+      "sha256": "da51cd11b17af1acda995b1bdc0fba1cae8c2383e0303ff233abdbef38d32f8b"
+    },
+    {
+      "path": "src/local_epub/reader.py",
+      "bytes": 8064,
+      "sha256": "8b8158a7000fa28d43114b9fc8778f818beb6b6cf0aa1e75c035b6e1193e1a67"
+    },
+    {
+      "path": "src/local_epub/reporting.py",
+      "bytes": 3933,
+      "sha256": "2c662d44322b024a53c6513f7ce2ef4a779a32688cdaa4bcc8ba1c8b9a948e8b"
+    },
+    {
+      "path": "src/local_epub/resource_catalog.json",
+      "bytes": 572,
+      "sha256": "e32ac123e8d98bcc41b33edabb9f8e5d728429efe8ccaef3ad8f6a79abfa20a4"
+    },
+    {
+      "path": "src/local_epub/resources.py",
+      "bytes": 9922,
+      "sha256": "d25b0c1bf0bab356f05949ac6da951adbab56bc50f99b6b59e588c154df93e9e"
+    },
+    {
+      "path": "src/local_epub/scan_graphics.py",
+      "bytes": 11643,
+      "sha256": "d9edf12c67338d6d08185cf14a787b997a4616105c307c6e38cdf19c956a234a"
+    },
+    {
+      "path": "src/local_epub/storage.py",
+      "bytes": 1889,
+      "sha256": "a339650f4b235345d488c62b1180174b4ccc0e640688edd06741bb6b3801399f"
+    },
+    {
+      "path": "tests/fixtures/01_chinese_crosspage.pdf",
+      "bytes": 4985,
+      "sha256": "f4402a832ffd2f8bf38811fec93267bc5a8b19195034f1e0555540b634f0ca59"
+    },
+    {
+      "path": "tests/fixtures/01_chinese_crosspage.truth.json",
+      "bytes": 2266,
+      "sha256": "504f09b42ee3e08c737bdc599cd38790a3b6368dcbc4b7b9ecf61796e925a36e"
+    },
+    {
+      "path": "tests/fixtures/02_mixed_bad_layer.pdf",
+      "bytes": 237870,
+      "sha256": "f6b13fc217ff4c6b9f2181437cc531a62b302ae6d4d194e6da67b6826972807e"
+    },
+    {
+      "path": "tests/fixtures/02_mixed_bad_layer.truth.json",
+      "bytes": 1665,
+      "sha256": "7d2e3e9100a2bb63dfda8a8f15729a18e9974737914de788b4660aee650e5e65"
+    },
+    {
+      "path": "tests/fixtures/03_columns_figures_notes.pdf",
+      "bytes": 8417,
+      "sha256": "72229b2d1b817163f70b19be5ff47457fb9b885990c4d867d1b9141f28c9fee5"
+    },
+    {
+      "path": "tests/fixtures/03_columns_figures_notes.truth.json",
+      "bytes": 1729,
+      "sha256": "c2c7becc418d7da9755271a267bd47e570ef6f5291cbabff1bd79c8ee6794e9f"
+    },
+    {
+      "path": "tests/fixtures/04_page_number_gap.pdf",
+      "bytes": 3830,
+      "sha256": "fe8ad3110e3525799b5ce202a18704eeb0158b3dcca00e45c0a73249c5b3db98"
+    },
+    {
+      "path": "tests/fixtures/04_page_number_gap.truth.json",
+      "bytes": 1702,
+      "sha256": "54ecb95f7d03a4f8a50dcd3df2dd3c1e9bbd178e3c9d915220d33d1786600d78"
+    },
+    {
+      "path": "tests/fixtures/README.md",
+      "bytes": 2159,
+      "sha256": "83e193f3cc1c302d6632336b2b7145ed925ea3adfb0f828e4a07a6d7f0528aeb"
+    },
+    {
+      "path": "tests/fixtures/previews/01_chinese_crosspage-1.png",
+      "bytes": 190542,
+      "sha256": "082cdcdd92064f1a95ff17cfc4c8e949277d2f639096ad1f0a85715c2b4ed90a"
+    },
+    {
+      "path": "tests/fixtures/previews/01_chinese_crosspage-2.png",
+      "bytes": 72138,
+      "sha256": "e71be79a07779a7bc1149b69e50a1217181edbe64740ba9217773b35a2732d22"
+    },
+    {
+      "path": "tests/fixtures/previews/02_mixed_bad_layer-1.png",
+      "bytes": 39055,
+      "sha256": "66ef0d2bc6dfead1041ce5e279baf32b91458a6c48c70680dd96b6ccf0a811a2"
+    },
+    {
+      "path": "tests/fixtures/previews/02_mixed_bad_layer-2.png",
+      "bytes": 54674,
+      "sha256": "403ad452f3e286cb5586bf57de3488f29194c8cfc54f00b973eab27f0050ae34"
+    },
+    {
+      "path": "tests/fixtures/previews/02_mixed_bad_layer-3.png",
+      "bytes": 61138,
+      "sha256": "d1094f749911d0d9478adff5162700064a835f88e2842fda21d1f6dbaff53569"
+    },
+    {
+      "path": "tests/fixtures/previews/02_mixed_bad_layer-4.png",
+      "bytes": 57612,
+      "sha256": "dd1f4baf8eaad5614d728fa26f7e1c0baeafa8407cd06b805dd958501583ae7a"
+    },
+    {
+      "path": "tests/fixtures/previews/03_columns_figures_notes-1.png",
+      "bytes": 76604,
+      "sha256": "914e22d5a3a2f72a37d2c4e8dd5a1c1b3430b6ddeb6ade26853a014c0cfbe20d"
+    },
+    {
+      "path": "tests/fixtures/previews/03_columns_figures_notes-2.png",
+      "bytes": 69003,
+      "sha256": "15d459d1f9753e836ac1a55b092fb3f4b0b8b577543b75f0b4e28fe7bff61502"
+    },
+    {
+      "path": "tests/test_chapter_boundaries.py",
+      "bytes": 9775,
+      "sha256": "25fb7920d2cd097aae8c94ba6bd77398ef2c289262b9f80feeb8899d78663f03"
+    },
+    {
+      "path": "tests/test_cross_page_paragraphs.py",
+      "bytes": 8787,
+      "sha256": "48d7bb8dbd63ac516ae7dbdbe9daee602e91b066bf0ff56027c740be4f6348c3"
+    },
+    {
+      "path": "tests/test_epub_graphics.py",
+      "bytes": 7535,
+      "sha256": "826cbd4c53356b497806c94da85036c6cfc35baa1ae9136e5601ff1db4d675c8"
+    },
+    {
+      "path": "tests/test_gpu_execution.py",
+      "bytes": 8078,
+      "sha256": "edca2025fdbeecdbaa9c283259d3ed44ad1e79f4d363c73c6499a86b8f93e4be"
+    },
+    {
+      "path": "tests/test_gpu_resources.py",
+      "bytes": 6500,
+      "sha256": "f90fa1df7646c0ba3112a83145107e4f58631927f549b1a70748716d4b40e31e"
+    },
+    {
+      "path": "tests/test_gui_gpu.py",
+      "bytes": 12170,
+      "sha256": "964892fa1e5bb7cb887afec1d9f105af864b8d9ff0549ded4cb9b0d0c744614f"
+    },
+    {
+      "path": "tests/test_gui_rebuild.py",
+      "bytes": 7254,
+      "sha256": "c3df3c6ebe5d79c692240d74e078fc6ba7a7cfa87cd53ea2f544df2795e4c24a"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "bytes": 10789,
+      "sha256": "73ecb877a851cfa3da59744eb9e12f839faa5ac7902db1e0b5fe93fcef931fea"
+    },
+    {
+      "path": "tests/test_layout_edits.py",
+      "bytes": 3873,
+      "sha256": "242d4a0a4d3ce643ec9dd8aa7e1fade2625ef8cb8186d6d3fbc53685b8e156e7"
+    },
+    {
+      "path": "tests/test_margin_export.py",
+      "bytes": 14968,
+      "sha256": "949ca6cbadcc63044bd8efab1b72fa194d4d44c1f8e6e5700d0228509c893779"
+    },
+    {
+      "path": "tests/test_margin_ocr.py",
+      "bytes": 4302,
+      "sha256": "cf7717cea90e3b4217abebe78c6fb1985f3fb8bbc198306408028cc93fb1529b"
+    },
+    {
+      "path": "tests/test_margin_plan.py",
+      "bytes": 10898,
+      "sha256": "616d574bb124cc065991f1f4637cce42b0cec43ea1e25b48ab180d70543a1155"
+    },
+    {
+      "path": "tests/test_page_info.py",
+      "bytes": 4679,
+      "sha256": "b559a1e129e7b390b5e6f557e1b64dbdab2db2c7fc57efea6f2b43f3d65cc11e"
+    },
+    {
+      "path": "tests/test_page_info_export.py",
+      "bytes": 12344,
+      "sha256": "71547d4a0fc3cbed62ddc2c93652a338e54657798259afc76aa7b4981396dc99"
+    },
+    {
+      "path": "tests/test_page_number_repairs.py",
+      "bytes": 10590,
+      "sha256": "646cee87d55286044a5d81c424d4fa007e718a7f0b2684a988646c5aac2390ab"
+    },
+    {
+      "path": "tests/test_paragraphs.py",
+      "bytes": 9830,
+      "sha256": "740662adaa97dd76cf77a93b359c4d0c1f53a21c0f39cc7252619f35802293a7"
+    },
+    {
+      "path": "tests/test_running_reader.py",
+      "bytes": 12706,
+      "sha256": "3aecaa260aaa897ae83050b0e67e1c282e19e87bff8da1b97281d8fb109edbb2"
+    },
+    {
+      "path": "tests/test_scan_graphics.py",
+      "bytes": 6327,
+      "sha256": "19c5fbe8742ebbcc455e3c67bbf7c09e46b6a194e3facec7602529a03e844da6"
+    },
+    {
+      "path": "tests/test_source_privacy.py",
+      "bytes": 1584,
+      "sha256": "6b5fe5ae3c675a1e7abfe0f35d5361c2bf813b5098975c0af8e8ea870cb078d4"
+    },
+    {
+      "path": "tests/test_url_footers.py",
+      "bytes": 7871,
+      "sha256": "5caf17096ece3f40b064aeef86afbbefbd86be580476d95ef9383456b81bbe2d"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/README.md",
+      "bytes": 3523,
+      "sha256": "d1bd89bea9cbbe6e1fde47a846390da2dd348fa564504c2de9230c81541b5e39"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/UPSTREAM-README.md",
+      "bytes": 2795,
+      "sha256": "2cfce3e059642978dd6c52688259bd221078500dd231d4fd8b3fa4dfd507a394"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/UPSTREAM-package.json",
+      "bytes": 2997,
+      "sha256": "6d5cc1ead6479037ac26ed90ae55f589447340dc271c9a042b5acaa6e2a251ed"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/Local-reader-profile-MIT.txt",
+      "bytes": 1084,
+      "sha256": "e87664396dd9c242d3ee7a74f1b6674c98b50d18f97750af8879ecf5de7f6c14"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/OFL-1.1.txt",
+      "bytes": 4016,
+      "sha256": "8eea8287e5876b539670cadb82e99f9a7afddec6f6730811be1daf25d2e9bcfd"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/Vivliostyle-AGPL-3.0.txt",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/fast-diff-1.3.0-LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "20430d7ea026abdb78e873e59a0817dd7d2921d94acefeafdc3e4e0150a4595d"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/fontawesome-free-5.15.4-LICENSE.txt",
+      "bytes": 1548,
+      "sha256": "e779748dfe75e84f974df3c7bc07f842011a100159158b0f1f49b2f2a5a515cb"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/i18next-3.5.2-LICENSE.txt",
+      "bytes": 1074,
+      "sha256": "a392b56d5d99eafc1cde7730206bd87250d4732723028aeec9a47d86a2543404"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/i18next-ko-3.0.1-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "50ed35d6b4b962dec62f53d1a675d10c8d75c8fbc30b73d012ed8b6b6d973f4c"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/licenses/knockout-3.5.3-LICENSE.txt",
+      "bytes": 1205,
+      "sha256": "6dd350bd0e9132e2e00a532f5e45b4a64d76880cf08462e0f7cd34ba797c1742"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/manifest.json",
+      "bytes": 5346,
+      "sha256": "7150744acab72ffd23c2baae4eb194be4845534ff9fffb2c65714e397f50aac0"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/profiles/source-margins.css",
+      "bytes": 829,
+      "sha256": "ca326d9e3b00e19a7c0b8b689415222454e2731fc6a6186f93f7ab09415a2e61"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/css/ui.arrows.css",
+      "bytes": 3302,
+      "sha256": "edae31e94469989c01bc37fc574c802b30626afccdcd19f40384761eca4fcf29"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/css/ui.loading-overlay.css",
+      "bytes": 1245,
+      "sha256": "5e36c163a08c8cfa515cb00e56f3cad500941ad6c46d9da2c75a8cfdd6716825"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/css/ui.menu-bar.css",
+      "bytes": 40713,
+      "sha256": "f23c531c99c7f440285467e18710937d6505fc15e86db3e4ea8dd15909c13de3"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/css/ui.message-dialog.css",
+      "bytes": 1817,
+      "sha256": "439b8fb2295af24049e7d71b475a0a1d9ae310031f9fc21ad724cdba035020bc"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/css/ui.text-selection-menu.css",
+      "bytes": 4129,
+      "sha256": "a6055f4b5856e78b1f8b4ebfcd844a026c1499fbc2ec2ce5fd4958fe99ec78ee"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/css/vivliostyle-viewer.css",
+      "bytes": 1788,
+      "sha256": "dff20f0d868b607bc19f3800a37a0a1d1cde10720910cbd90d3825f3df5e3c7a"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/fonts/fa-solid-900.woff2",
+      "bytes": 78268,
+      "sha256": "9834b82ad26e2a37583d22676a12dd2eb0fe7c80356a2114d0db1aa8b3899537"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/index.html",
+      "bytes": 43179,
+      "sha256": "36bdec6c3f2ee4d7e137a1336702b85eecadc5631386a5db7f8ad8753bb6bec5"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/js/vivliostyle-viewer.js",
+      "bytes": 1002982,
+      "sha256": "4cad949be9d95c70218098d2f0060bfdaa50c32c4ed3ed7674f73c3c0609e13e"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/js/vivliostyle-viewer.js.map",
+      "bytes": 4130582,
+      "sha256": "afc97a98271f02b89044722aa2657ed2d558d8e967ee012b463fe1e68c965f33"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/resources/mathjax-config.js",
+      "bytes": 1181,
+      "sha256": "33adcf50ad775c562b50e0f2160293603d516af40b657e96fd5ba693fcf0586c"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/resources/vivliostyle-icon.png",
+      "bytes": 3048,
+      "sha256": "9192ec44e0869ffeb04a4829604cf5a801726f9cf437a70434f25123a46c99a4"
+    },
+    {
+      "path": "vendor/reader/vivliostyle-2.45.2/viewer/resources/vivliostyle-logo.svg",
+      "bytes": 15067,
+      "sha256": "e0f608690884644916b77cce2bb29373616a57947477b0e9ad8e225a6abc6f7f"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/README.md",
+      "bytes": 1535,
+      "sha256": "e00a8b3802f29f83c9135ba5cf40fec09d0896ec23e544efc090fcdcee790562"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/core-2.45.2.tgz",
+      "bytes": 1117264,
+      "sha256": "114d4fb8deb5bdafc2aeb2baa983e38c869ff7103ae4f4c4e1550726dd99df58"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/dependency-metadata.json",
+      "bytes": 1719,
+      "sha256": "296db6c377893bd6d132ab5a019aa2e692b7336f1fcabb69b4e2e8ccef39ed72"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/fast-diff-1.3.0.tgz",
+      "bytes": 14328,
+      "sha256": "77f602d83366f68f4dfb5dd9ba636933dc0047502da4d48d914d1d361c517d4a"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/fontawesome-free-5.15.4.tgz",
+      "bytes": 4246572,
+      "sha256": "6d890608585d48f50f6434a90ed3f581e76d360edb26800dba2f782ef3e77e11"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/i18next-3.5.2.tgz",
+      "bytes": 92567,
+      "sha256": "df0e522d21650a43bf0102de288015f202185bc62cf6f5241c38913e5585f679"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/i18next-ko-3.0.1.tgz",
+      "bytes": 21800,
+      "sha256": "b9673d769c1a81ce4c9e5d3f4000a435727c789279b74efdbb6ab1731795e3bc"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/knockout-3.5.3.tgz",
+      "bytes": 109307,
+      "sha256": "2af98057a5689e8f69de6e94aa6daa53b0500278bdbedc4cb35f46e934b788fe"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/manifest.json",
+      "bytes": 2013,
+      "sha256": "a97ee87523dc2b7b2b7f1bb7ef304e85068e57054b09ecc398602c73e9e49b59"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/viewer-2.45.2.tgz",
+      "bytes": 1409696,
+      "sha256": "f2624da43a8c5475ffdc95a70faa95c279830a730b0e4fa5dbf49571b56b8556"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/viewer-npm-metadata.json",
+      "bytes": 4358,
+      "sha256": "ea8d080b255ca2892f611d5df7be5e3ad9a553317016ba847aefdaa59d2fba5a"
+    },
+    {
+      "path": "vendor/sources/vivliostyle-2.45.2/vivliostyle.js-8f31c04f2dd3a3d992016cec21cf69acf221a821.tar.gz",
+      "bytes": 2067744,
+      "sha256": "0218a7d7ffb0549e304468c289e22bea5e5097fa4beba9087f53863b94434880"
+    },
+    {
+      "path": "vendor/wheels/opencv_python-4.11.0.86-cp312-cp312-macosx_14_0_arm64.whl",
+      "bytes": 5150874,
+      "sha256": "31dc606faece9c9fc22e47f7eefcdda98c6d21f6d7f39cd20b77d92efdd937a1"
+    },
+    {
+      "path": "vendor/wheels/opencv_python-4.11.0.86-cp312-cp312-macosx_14_0_arm64.whl.sha256",
+      "bytes": 124,
+      "sha256": "498c236d28ead134c3b801662bf16f2d0211d40ec28a568e7d177cc87e2b3e49"
+    }
+  ],
+  "external_build_source": {
+    "package": "opencv-python",
+    "version": "4.11.0.86",
+    "source_url": "https://files.pythonhosted.org/packages/17/06/68c27a523103dad5837dc5b87e71285280c4f098c60e4fe8a8db6486ab09/opencv-python-4.11.0.86.tar.gz",
+    "source_sha256": "03d60ccae62304860d232272e4a4fda93c39d595780cb40b161b310244b736a4",
+    "source_bytes": 95171956,
+    "filename": "opencv-python-4.11.0.86.tar.gz",
+    "downloaded_from": "https://pypi.tuna.tsinghua.edu.cn/packages/17/06/68c27a523103dad5837dc5b87e71285280c4f098c60e4fe8a8db6486ab09/opencv-python-4.11.0.86.tar.gz",
+    "mirror_bytes_match_official_sha256": true
+  }
+}

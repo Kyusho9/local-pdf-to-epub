@@ -1,0 +1,37 @@
+.venv/
+.venv-release/
+.venv-anaconda-bootstrap/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+artifacts/jobs/
+artifacts/*-test/
+resources/*.onnx
+.build-opencv-venv/
+artifacts/qt612-preview/
+artifacts/build-qt612/
+
+# Never stage local documents, captured pages, task caches, or test-machine
+# evidence from this development checkout. Public source is staged separately
+# from scripts/prepare-public-source.py's allowlist after review.
+/artifacts/
+/tools/
+/resources/
+/directml-runtime/
+/dml-runtime/
+/gpu-runtime/
+/gpu-probe/
+*.private.*
+private/
+private-*/
+user-*/
+*.epub
+*.pdf
+!/tests/fixtures/*.pdf
+.env
+.env.*
+*.pem
+*.key

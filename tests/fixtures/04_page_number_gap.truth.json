@@ -1,0 +1,58 @@
+{
+  "fixture": "04_page_number_gap.pdf",
+  "origin": "本项目自制；第3页原书实际没有印刷页码，不是OCR漏字样本",
+  "page_count": 5,
+  "pages": [
+    {
+      "page": 1,
+      "expected_method": "text",
+      "ordered_fragments": [
+        "Native source page 1: body content stays reflowable.",
+        "The original third page intentionally has no printed label."
+      ],
+      "actual_printed_page_number": "20"
+    },
+    {
+      "page": 2,
+      "expected_method": "text",
+      "ordered_fragments": [
+        "Native source page 2: body content stays reflowable.",
+        "The original third page intentionally has no printed label."
+      ],
+      "actual_printed_page_number": "21"
+    },
+    {
+      "page": 3,
+      "expected_method": "text",
+      "ordered_fragments": [
+        "Native source page 3: body content stays reflowable.",
+        "The original third page intentionally has no printed label."
+      ],
+      "actual_printed_page_number": null
+    },
+    {
+      "page": 4,
+      "expected_method": "text",
+      "ordered_fragments": [
+        "Native source page 4: body content stays reflowable.",
+        "The original third page intentionally has no printed label."
+      ],
+      "actual_printed_page_number": "23"
+    },
+    {
+      "page": 5,
+      "expected_method": "text",
+      "ordered_fragments": [
+        "Native source page 5: body content stays reflowable.",
+        "The original third page intentionally has no printed label."
+      ],
+      "actual_printed_page_number": "24"
+    }
+  ],
+  "page_number_gap": {
+    "page": 3,
+    "suggested_label": "22",
+    "actual_printed_label": null,
+    "requires_explicit_confirmation": true
+  }
+}
